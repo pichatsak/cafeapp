@@ -2,241 +2,286 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="55dp">
-    <LinearLayout
-        android:id="@+id/list_stock1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:weightSum="4"
-            android:orientation="horizontal"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp">
+
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1.7"
-                android:gravity="center">
 
-                <TextView
-                    android:id="@+id/nameStock"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ชื่อ"
-                    android:textColor="@color/main1"
-                    android:textSize="16sp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                >
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:weightSum="2"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
                     android:orientation="horizontal"
-                    >
-
+                    android:weightSum="4">
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.7"
+                        android:gravity="center">
 
-
-                        >
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:weightSum="2">
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:id="@+id/AddLobStock"
-                                    android:layout_gravity="center"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:background="@drawable/f_addandlob">
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:background="@drawable/ic_baseline_horizontal_rule_24"/>
-
-                                </LinearLayout>
-
-
-
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:gravity="end|center"
-                                android:layout_weight="1">
-                                <TextView
-                                    android:id="@+id/numStock"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="20"
-                                    android:textColor="@color/main1"
-                                    android:textSize="16sp"
-                                    />
-                            </LinearLayout>
-                        </LinearLayout>
-
-
-
-
+                        <TextView
+                            android:id="@+id/nameStock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ชื่อ"
+                            android:textColor="@color/main1"
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_marginLeft="5dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        >
-
-
+                        android:layout_weight="1">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:orientation="horizontal"
                             android:weightSum="2">
+
 
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:gravity="center|start">
-                                <TextView
-                                    android:id="@+id/unitStock"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="ฟอง"
-                                    android:textColor="@color/main1"
-                                    android:textSize="16sp"
-                                    />
+
+
+                                >
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="2">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <LinearLayout
+                                            android:id="@+id/AddLobStock"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/f_addandlob">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/ic_baseline_horizontal_rule_24" />
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="end|center">
+
+                                        <TextView
+                                            android:id="@+id/numStock"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="20"
+                                            android:textColor="@color/main1"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:gravity="end">
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1">
+
+
                                 <LinearLayout
-                                    android:id="@+id/AddNumStock"
-                                    android:layout_gravity="center"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:background="@drawable/f_addandlob">
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:background="@drawable/ic_baseline_add_242"/>
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="2">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center|start">
+
+                                        <TextView
+                                            android:id="@+id/unitStock"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ฟอง"
+                                            android:textColor="@color/main1"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="end">
+
+                                        <LinearLayout
+                                            android:id="@+id/AddNumStock"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/f_addandlob">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/ic_baseline_add_242" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
 
                                 </LinearLayout>
+
+
                             </LinearLayout>
-
-
 
                         </LinearLayout>
 
 
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/use_stock"
+                            android:layout_width="100dp"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/b_good"
+                            android:elevation="0dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="7dp"
+                                android:text="มีของ"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/low_stock"
+                            android:layout_width="100dp"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/b_yellow"
+                            android:elevation="0dp"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="7dp"
+                                android:text="ใกล้หมด"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/out_of_stock"
+                            android:layout_width="100dp"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/b_bad"
+                            android:elevation="0dp"
+                            android:gravity="center"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="7dp"
+                                android:text="หมดแล้ว"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+
+                                />
+                        </LinearLayout>
+
 
                     </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/delect_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/clear"
+                            android:backgroundTint="@color/textred" />
+
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
-
-
-
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center">
-
 
                 <LinearLayout
-                    android:layout_marginLeft="20dp"
-                    android:layout_width="100dp"
-                    android:layout_height="37dp"
-                    android:background="@drawable/b_good"
-                    android:elevation="0dp"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="มีของ"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="7dp"
-                        android:paddingBottom="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp">
 
-                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="@color/textmenu">
+
+                    </LinearLayout>
                 </LinearLayout>
 
-
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.3"
-                android:gravity="center">
-
-                <ImageView
-                    android:id="@+id/delect_item"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/clear"
-                    android:backgroundTint="@color/textred"/>
-
-
-
             </LinearLayout>
 
 
 
 
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="2px"
-                android:background="@color/textmenu">
-
-            </LinearLayout>
-        </LinearLayout>
-
-    </LinearLayout>
 </LinearLayout>

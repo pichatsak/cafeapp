@@ -97,6 +97,7 @@
                                         android:textSize="16sp" />
 
                                     <TextView
+                                        android:id="@+id/namestocklist_lob"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
                                         android:layout_marginTop="5dp"
@@ -122,6 +123,7 @@
                                         android:textSize="16sp" />
 
                                     <EditText
+                                        android:id="@+id/num_lob"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
                                         android:layout_marginTop="5dp"
@@ -138,7 +140,7 @@
                                     android:gravity="center">
 
                                     <LinearLayout
-                                        android:id="@+id/checkBill"
+                                        android:id="@+id/lobnum"
                                         android:layout_width="200dp"
                                         android:layout_height="60dp"
                                         android:layout_gravity="center"
