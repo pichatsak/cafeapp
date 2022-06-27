@@ -1,0 +1,2079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/check_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <!--1-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/check_fram"
+                    android:elevation="2dp">
+
+                    <!--            1.1-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/check_fram2"
+                                android:elevation="0dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center">
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/check_fram_list"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingTop="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="10dp"
+
+                                        >
+
+
+                                        <ImageView
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:layout_marginLeft="0sp"
+                                            android:background="@drawable/ic_money_bag_svgrepo_com"
+
+
+                                            android:backgroundTint="@color/white" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginTop="0dp"
+                                        android:text="ชำระเงิน"
+                                        android:textColor="@color/main1"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginTop="40dp"
+                                    android:elevation="2dp"
+                                    android:gravity="center"
+                                    android:text="เงินสด"
+                                    android:background="@drawable/check_fram_bar3"
+                                    android:textColor="@color/textnonbode"
+                                    android:textSize="18sp"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginTop="25dp"
+                                    android:background="@null"
+                                    android:elevation="2dp"
+                                    android:gravity="center"
+                                    android:text="เงินโอน"
+
+                                    android:textColor="@color/QDropMain"
+                                    android:textSize="18sp"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--  2      -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="4.9"
+                    android:background="@color/white1"
+                    android:elevation="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2">
+
+                        </LinearLayout>
+
+
+                        <!--เร่ม-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2.6"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="30">
+                                <!--1-->
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="5"
+
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+
+                                            android:layout_weight="2.1"
+
+
+                                            android:gravity="end">
+
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:background="@drawable/check_callculate"
+
+                                                android:elevation="2dp"
+                                                android:hint="จำนวนเงิน"
+                                                android:paddingLeft="15dp"
+                                                android:paddingRight="25dp"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp"
+
+                                                />
+
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <!--1-->
+                                <!--                        2-->
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_number"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginRight="5dp"
+                                                        android:text="พอดี"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="เคลียร์"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="X"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <!--                        2-->
+                                <!--3-->
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="7"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="8"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="9"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <!--3-->
+                                <!--                        4-->
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="4"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="5"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="6"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="1"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="2"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="3"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <!--4-->
+                                <!--                        5-->
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal"
+                                                android:weightSum="2">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginRight="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="0.65"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="0"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="4dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1.35"
+                                                    android:background="@drawable/check_number"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="ยืนยัน"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!--5-->
+                                <!--                        6-->
+
+
+                                <!--                        6-->
+                                <!--                    หมดของเครดิต-->
+                            </LinearLayout>
+                            <!--                    หมด-->
+
+
+                            <!--                    เริ่มของเครดิต-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:weightSum="27">
+                                <!--1-->
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="5"
+
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1"
+
+                                            >
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:background="@drawable/check_callculate"
+                                                android:elevation="2dp"
+                                                android:orientation="horizontal"
+                                                android:weightSum="3">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="0.65"
+                                                    android:gravity="center">
+
+                                                    <ImageView
+                                                        android:layout_width="40dp"
+                                                        android:layout_height="40dp"
+                                                        android:layout_marginLeft="5dp"
+
+
+                                                        android:src="@drawable/visa" />
+
+                                                </LinearLayout>
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="2.35">
+
+
+                                                    <EditText
+
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:background="@android:color/transparent"
+                                                        android:backgroundTint="@null"
+                                                        android:paddingLeft="15dp"
+                                                        android:paddingRight="25dp"
+                                                        android:textAlignment="center"
+                                                        android:textColor="@color/textnonbode"
+                                                        android:textSize="18sp"
+
+                                                        />
+
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <!--1-->
+                                <!--                        2-->
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_pick"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="50dp"
+                                                        android:layout_height="50dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:background="@drawable/visa" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <ImageView
+                                                        android:layout_width="60dp"
+                                                        android:layout_height="35dp"
+                                                        app:srcCompat="@drawable/ic_mastercard_logo" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="60dp"
+                                                        android:layout_height="60dp"
+                                                        android:background="@drawable/amerigun"
+
+                                                        />
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <!--                        2-->
+                                <!--3-->
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="40dp"
+                                                        android:layout_height="40dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:background="@drawable/jcb" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <ImageView
+                                                        android:layout_width="60dp"
+                                                        android:layout_height="60dp"
+                                                        app:srcCompat="@drawable/unionpay" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="60dp"
+                                                        android:layout_height="60dp"
+                                                        android:background="@drawable/discover"
+
+                                                        />
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <!--3-->
+                                <!--                        4-->
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="65dp"
+                                                        android:layout_height="65dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:background="@drawable/western_union" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <ImageView
+                                                        android:layout_width="60dp"
+                                                        android:layout_height="60dp"
+                                                        app:srcCompat="@drawable/paypal" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/check_callculate"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="60dp"
+                                                        android:layout_height="60dp"
+                                                        android:background="@drawable/amerigun"
+
+                                                        />
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <!--4-->
+                                <!--                        5-->
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal"
+                                                android:weightSum="2">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="1.36">
+
+
+                                                    <EditText
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+
+                                                        android:layout_marginLeft="5dp"
+                                                        android:layout_marginTop="4dp"
+                                                        android:layout_marginRight="0dp"
+                                                        android:layout_marginBottom="4dp"
+                                                        android:background="@drawable/check_callculate"
+                                                        android:elevation="2dp"
+                                                        android:hint="เลขบัตร"
+                                                        android:paddingLeft="10dp"
+                                                        android:textColor="@color/textgrey"
+                                                        android:textSize="18sp"
+
+                                                        />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginTop="4dp"
+                                                    android:layout_marginRight="5.5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:layout_weight="0.64"
+                                                    android:background="@drawable/check_number"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="ยืนยัน"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!--5-->
+                                <!--                        6-->
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="2">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2.1">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="*เลขบัตร 4 ตัวท้ายไม่ต้องกรอก" />
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.45">
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <!--                        6-->
+                                <!--                    หมดของเครดิต-->
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2">
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--        3-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.3"
+                    android:background="@drawable/check_fram1"
+                    android:elevation="2dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ex_dialog"
+                            android:padding="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/exit_b"
+                            android:src="@drawable/ic_baseline_clear_24"
+                            android:elevation="2dp" />
+
+
+                        <!--                        เทส-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.4"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="20dp">
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="รายละเอียดการชำระ"
+                                            android:textColor="@color/main1"
+                                            android:textSize="18sp"
+                                            android:textStyle="bold"
+
+                                            />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="8.6"
+                                android:orientation="vertical">
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="0dp"
+                                    android:scrollbars="none">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="@drawable/design_fram_card"
+                                            android:elevation="2dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:orientation="vertical">
+
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+
+                                                        android:gravity="center"
+
+                                                        >
+
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_gravity="center"
+
+                                                            android:text="เงินสด"
+                                                            android:textColor="@color/textnonbode"
+                                                            android:textSize="18sp" />
+
+
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1.5"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="120.00"
+                                                        android:textColor="@color/textnonbode"
+                                                        android:textSize="18sp"
+
+
+                                                        />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center">
+
+                                                    <ImageView
+                                                        android:layout_width="20dp"
+                                                        android:layout_height="20dp"
+                                                        android:background="@drawable/trash"
+                                                        android:backgroundTint="@color/textgrey" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <!--                        อันแรก-->
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="@drawable/design_fram_card"
+                                            android:elevation="2dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:orientation="vertical">
+
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+
+                                                        android:gravity="center"
+
+                                                        >
+
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_gravity="center"
+
+                                                            android:text="เงินโอน"
+                                                            android:textColor="@color/textnonbode"
+                                                            android:textSize="18sp" />
+
+
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1.5"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="100.00"
+                                                        android:textColor="@color/textnonbode"
+                                                        android:textSize="18sp"
+
+
+                                                        />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center">
+
+                                                    <ImageView
+                                                        android:layout_width="20dp"
+                                                        android:layout_height="20dp"
+                                                        android:background="@drawable/trash"
+                                                        android:backgroundTint="@color/textred" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="@drawable/design_fram_card"
+                                            android:elevation="2dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:orientation="vertical">
+
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+
+                                                        android:gravity="center"
+
+                                                        >
+
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_gravity="center"
+
+                                                            android:text="เงินสด"
+                                                            android:textColor="@color/textnonbode"
+                                                            android:textSize="18sp" />
+
+
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1.5"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="120.00"
+                                                        android:textColor="@color/textnonbode"
+                                                        android:textSize="18sp"
+
+
+                                                        />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center">
+
+                                                    <ImageView
+                                                        android:layout_width="20dp"
+                                                        android:layout_height="20dp"
+                                                        android:background="@drawable/trash"
+                                                        android:backgroundTint="@color/textgrey" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="@drawable/design_fram_card"
+                                            android:elevation="2dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal"
+                                                android:weightSum="3">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:orientation="vertical">
+
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+
+                                                        android:gravity="center"
+
+                                                        >
+
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_gravity="center"
+
+                                                            android:text="เงินสด"
+                                                            android:textColor="@color/textnonbode"
+                                                            android:textSize="18sp" />
+
+
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1.5"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="120.00"
+                                                        android:textColor="@color/textnonbode"
+                                                        android:textSize="18sp"
+
+
+                                                        />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center">
+
+                                                    <ImageView
+                                                        android:layout_width="20dp"
+                                                        android:layout_height="20dp"
+                                                        android:background="@drawable/trash"
+                                                        android:backgroundTint="@color/textgrey" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="300dp">
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                    <!--                        อันสาม-->
+                                </ScrollView>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/fram_dialog">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2px"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/textmenu">
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
+
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="40dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="15dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:background="@drawable/design_fram_list1"
+                                                android:elevation="2dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="ที่ต้องชำระ"
+                                                android:textColor="@color/textgre"
+                                                android:textSize="18sp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="0dp"
+
+                                                android:layout_marginRight="20dp"
+                                                android:text="220.00"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="40dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="15dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:background="@drawable/design_fram_list3"
+                                                android:elevation="2dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="ชำระแล้ว"
+                                                android:textColor="@color/textgreen"
+                                                android:textSize="18sp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="3dp"
+
+                                                android:layout_marginRight="20dp"
+                                                android:text="220.00"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/checkBill"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="40dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="40dp"
+                                        android:layout_marginBottom="25dp"
+                                        android:background="@drawable/design_fram4"
+                                        android:elevation="2dp"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ยืนยันการชำระ"
+                                            android:textColor="@color/whiteDesign"
+                                            android:textSize="17sp"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <!--หมด3-->
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

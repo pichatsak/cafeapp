@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/check_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/check_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="10">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/check_fram_list"
+                                android:elevation="2dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="10dp"
+
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginLeft="0sp"
+                                    android:background="@drawable/lishmenu"
+
+
+                                    android:backgroundTint="@color/white" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="0dp"
+                                android:text="รายการทั้งหมด"
+                                android:textColor="@color/main1"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7.5">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8.5"
+                    android:orientation="vertical"
+                  >
+
+
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp"
+                            android:layout_marginTop="10dp">
+
+
+
+
+
+
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/design_fram_card"
+
+
+                                    android:elevation="2dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <!--อันแรก-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:paddingLeft="20dp"
+                                            android:paddingTop="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="คาปูชิโน่"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.00"
+                                                    android:textColor="@color/textnonbode"
+                                                    android:textSize="18sp" />
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                        <!--อันสอง-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginRight="10dp"
+                                                android:background="@drawable/lop" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="1"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp"
+
+
+                                                />
+
+                                            <TextView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:background="@drawable/bog" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="20dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/design_lish4"
+
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:text="เย็น"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="7dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/design_lish5"
+                                            android:elevation="2dp"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:text="หวาน 50%"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="16sp" />
+                                        />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="7dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/design_lish6"
+                                            android:elevation="2dp"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:text="แข็ง 50%"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="16sp" />
+                                        />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginBottom="0dp"
+
+                                    android:background="@drawable/design_fram_card"
+                                    android:elevation="2dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <!--อันแรก-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:paddingLeft="20dp"
+                                            android:paddingTop="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="ลาเต้"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.00"
+                                                    android:textColor="@color/textnonbode"
+                                                    android:textSize="18sp" />
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                        <!--อันสอง-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginRight="10dp"
+                                                android:background="@drawable/lop"
+                                                android:elevation="2dp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="1"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp"
+
+
+                                                />
+
+                                            <TextView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:background="@drawable/bog"
+                                                android:elevation="2dp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="20dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/design_lish4"
+                                            android:elevation="2dp"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:text="ร้อน"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="7dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/design_lish5"
+                                            android:elevation="2dp"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:text="หวานปกติ"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="16sp" />
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginBottom="0dp"
+
+                                    android:background="@drawable/design_fram_card"
+                                    android:elevation="2dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <!--อันแรก-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:paddingLeft="20dp"
+                                            android:paddingTop="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="ลาเต้"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.00"
+                                                    android:textColor="@color/textnonbode"
+                                                    android:textSize="18sp" />
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                        <!--อันสอง-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginRight="10dp"
+                                                android:background="@drawable/lop"
+                                                android:elevation="2dp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="1"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp"
+
+
+                                                />
+
+                                            <TextView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:background="@drawable/bog"
+                                                android:elevation="2dp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="20dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/design_lish4"
+                                            android:elevation="2dp"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:text="ร้อน"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="7dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/design_lish5"
+                                            android:elevation="2dp"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:text="หวานปกติ"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="16sp" />
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginBottom="0dp"
+
+                                    android:background="@drawable/design_fram_card"
+                                    android:elevation="2dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <!--อันแรก-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:paddingLeft="20dp"
+                                            android:paddingTop="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="ลาเต้"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.00"
+                                                    android:textColor="@color/textnonbode"
+                                                    android:textSize="18sp" />
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                        <!--อันสอง-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginRight="10dp"
+                                                android:background="@drawable/lop"
+                                                android:elevation="2dp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="1"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp"
+
+
+                                                />
+
+                                            <TextView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:background="@drawable/bog"
+                                                android:elevation="2dp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="20dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/design_lish4"
+                                            android:elevation="2dp"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:text="ร้อน"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="7dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/design_lish5"
+                                            android:elevation="2dp"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:text="หวานปกติ"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="16sp" />
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="0dp"
+
+                                android:background="@drawable/design_fram_card"
+                                android:elevation="2dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <!--อันแรก-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="20dp"
+                                        android:paddingTop="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ลาเต้"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="40.00"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                    <!--อันสอง-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/lop"
+                                            android:elevation="2dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp"
+
+
+                                            />
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:background="@drawable/bog"
+                                            android:elevation="2dp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish4"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="ร้อน"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish5"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="หวานปกติ"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="20dp"
+
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/design_fram_card"
+                                android:elevation="2dp"
+
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <!--อันแรก-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="20dp"
+                                        android:paddingTop="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="เอสเปรสโซ่"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="40.00"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginBottom="0dp"
+                                                android:background="@drawable/design_fram_list"
+                                                android:elevation="2dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="10%"
+                                                android:textColor="@color/textred"
+                                                android:textSize="16sp"
+                                                android:translationZ="-1dp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                    <!--อันสอง-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/lop"
+                                            android:elevation="2dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp"
+
+
+                                            />
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:background="@drawable/bog"
+                                            android:elevation="2dp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish4"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="ปั่น"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish5"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="หวาน 75%"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="20dp"
+
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/design_fram_card"
+                                android:elevation="2dp"
+
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <!--อันแรก-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="20dp"
+                                        android:paddingTop="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="เอสเปรสโซ่"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="40.00"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginBottom="0dp"
+                                                android:background="@drawable/design_fram_list"
+                                                android:elevation="2dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="10%"
+                                                android:textColor="@color/textred"
+                                                android:textSize="16sp"
+                                                android:translationZ="-1dp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                    <!--อันสอง-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/lop"
+                                            android:elevation="2dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp"
+
+
+                                            />
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:background="@drawable/bog"
+                                            android:elevation="2dp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish4"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="ปั่น"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish5"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="หวาน 75%"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/design_fram_card"
+
+
+                                android:elevation="2dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <!--อันแรก-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="20dp"
+                                        android:paddingTop="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="คาปูชิโน่"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="40.00"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                    <!--อันสอง-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/lop" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp"
+
+
+                                            />
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:background="@drawable/bog" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish4"
+
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="เย็น"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish5"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="หวาน 50%"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+                                    />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish6"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="แข็ง 50%"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+                                    />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/design_fram_card"
+
+
+                                android:elevation="2dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <!--อันแรก-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="20dp"
+                                        android:paddingTop="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="คาปูชิโน่"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="40.00"
+                                                android:textColor="@color/textnonbode"
+                                                android:textSize="18sp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                    <!--อันสอง-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/lop" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1"
+                                            android:textColor="@color/textnonbode"
+                                            android:textSize="18sp"
+
+
+                                            />
+
+                                        <TextView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:background="@drawable/bog" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish4"
+
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="เย็น"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish5"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="หวาน 50%"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+                                    />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/design_lish6"
+                                        android:elevation="2dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="แข็ง 50%"
+                                        android:textColor="@color/textnonbode"
+                                        android:textSize="16sp" />
+                                    />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+                </ScrollView>
+
+
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

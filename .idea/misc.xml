@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/asdf.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_add.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_add_plus.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_bad.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_click_menu_path.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_counter.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_counter1.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_counter2.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_dialog_g_f.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_good.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_non_click_menu.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_picture_upload.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_stock_t.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_stock_table.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_topping.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_topping_menu_add.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/b_yellow.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_background.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_callculate.xml" value="0.363" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram1.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram2.xml" value="0.365" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram3.xml" value="0.363" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram4.xml" value="0.363" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram_bar.xml" value="0.365" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram_bar1.xml" value="0.365" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram_bar2.xml" value="0.365" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram_bar3.xml" value="0.365" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram_life.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_fram_list.xml" value="0.3635" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_number.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/check_pick.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/circledark.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/delect_menu.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_circle.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram1.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram2.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram3.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram4.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram41.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_bar.xml" value="0.312" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_bar_pick.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_card.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_card1.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_edittex1.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_edittext.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_edittext2.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_edittext3.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_list.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_list1.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_list2.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_fram_list3.xml" value="0.363" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_lish4.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_lish5.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_lish6.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_lish_orange.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_menu.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_picture.xml" value="0.3155" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_shadow.xml" value="0.25" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/design_shadow1.xml" value="0.33" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/exit_b.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/f_addandlob.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/fram_dialog.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/fram_profile.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/fram_setting.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_add_svgrepo_com.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_baseline_add_241.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_baseline_add_242.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_baseline_add_photo_alternate_24.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_baseline_clear_24.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_baseline_horizontal_rule_24.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_foodpanda_logo_wine.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_foodpanda_svgrepo_com.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_forbidden_cancel_svgrepo_com.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_grab_2.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_grab_logo_svgrepo_com.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_mastercard_logo.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_printer_svgrepo_com.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_receipt_svgrepo_com.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_spectrum_gradient.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_spectrum_gradient__2_.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_spectrum_gradient__4_.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_stock_out_svgrepo_com.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_stock_out_svgrepo_com1.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/ic_users.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/menu.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/menuleft.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/next.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/pick_setting_icon.xml" value="0.3675" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/drawable/test.xml" value="0.365" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout-land/fragment_home.xml" value="0.48125" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout-normal/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout-small/fragment_home.xml" value="2.5142857142857142" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout-sw320dp/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout-sw720dp/fragment_home.xml" value="0.34375" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout-xlarge/fragment_home.xml" value="0.34375" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/activity_main.xml" value="0.34375" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/activity_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/activity_shop_expenses.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/activity_stock.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/app_bar_main.xml" value="0.34375" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/content_main.xml" value="0.25" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dailog_delect_list_stock.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_add_menu_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_add_shop_expenses.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_add_stock.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_add_topping.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_addnum_stock.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_check_lish.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_check_money.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_check_money_g_and_f.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_click_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_delect_list_shop_expenses.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/dialog_lobnum_stock.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/fragment_home.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.34375" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/nav_header_main.xml" value="0.34375" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/row_stock.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/test.xml" value="0.34326171875" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.5866666666666667" />
+        <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/menu/main.xml" value="0.34375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

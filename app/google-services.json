@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "276225613141",
+    "project_id": "pos-dev-food",
+    "storage_bucket": "pos-dev-food.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276225613141:android:9e9ebe4ae25aabfef7a3dc",
+        "android_client_info": {
+          "package_name": "com.af.cafeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276225613141-nnod69epji5vc2ljrl0aim1kg4sefh5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf54oaKAgHue5KofCtbVd93fwekmeG2IQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276225613141-nnod69epji5vc2ljrl0aim1kg4sefh5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

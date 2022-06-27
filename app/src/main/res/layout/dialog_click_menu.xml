@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <!--1-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0
+">
+
+                </LinearLayout>
+
+                <!--  2      -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:background="@drawable/b_dialog_g_f"
+                    android:elevation="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/ex_dialog_click_menu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/exit_b"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_baseline_clear_24" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="30dp"
+                                    android:paddingTop="40dp"
+                                    android:paddingBottom="40dp"
+                                    android:paddingRight="40dp"
+                                    >
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ต้มขมใส้อ่อน"
+                                            android:textColor="@color/main1"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp">
+
+                                        <TextView
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ประเภทลูกค้า : "
+                                            android:textColor="@color/grey"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ทั่วไป"
+                                            android:textColor="@color/black"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="20dp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:layout_marginRight="20dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_marginLeft="10dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="ขนาด"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="18sp"
+                                                    android:textStyle="bold" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_marginBottom="0dp"
+
+                                                android:visibility="visible">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginTop="5dp"
+                                                    android:weightSum="9">
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="3"
+
+                                                        >
+
+
+                                                        <LinearLayout
+                                                            android:orientation="vertical"
+
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+                                                            >
+
+                                                            <TextView
+                                                                android:paddingLeft="15dp"
+                                                                android:paddingRight="15dp"
+                                                                android:layout_width="110dp"
+                                                                android:layout_height="60dp"
+                                                                android:layout_marginTop="5dp"
+                                                                android:layout_marginBottom="5dp"
+                                                                android:layout_marginRight="5dp"
+                                                                android:layout_marginLeft="10dp"
+                                                                android:background="@drawable/b_click_menu_path"
+                                                                android:gravity="center"
+                                                                android:elevation="2dp"
+                                                                android:text="ธรรมดา"
+                                                                android:textColor="@color/white"
+                                                                android:textSize="18sp" />
+
+                                                        </LinearLayout>
+
+
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="3"
+
+                                                        >
+
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+                                                            >
+                                                            <TextView
+                                                                android:paddingLeft="15dp"
+                                                                android:paddingRight="15dp"
+                                                                android:layout_width="110dp"
+                                                                android:layout_height="60dp"
+                                                                android:layout_marginTop="5dp"
+                                                                android:background="@drawable/b_non_click_menu"
+                                                                android:gravity="center"
+                                                                android:text="พิเศษ"
+                                                                android:elevation="2dp"
+                                                                android:layout_marginLeft="10dp"
+                                                                android:layout_marginRight="5dp"
+                                                                android:layout_marginBottom="5dp"
+
+                                                                android:textColor="@color/textgrey"
+                                                                android:textSize="18sp" />
+
+
+                                                        </LinearLayout>
+
+
+                                                    </LinearLayout>
+
+
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp">
+
+                                                <TextView
+                                                    android:layout_marginLeft="10dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="ท็อปปิ้ง"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="18sp"
+                                                    android:textStyle="bold" />
+                                            </LinearLayout>
+
+
+                                            <ScrollView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:scrollbars="none">
+
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_marginBottom="0dp"
+                                                android:orientation="vertical"
+
+                                                android:visibility="visible">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginTop="5dp"
+                                                    android:paddingRight="5dp"
+                                                    android:weightSum="9">
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="3"
+
+                                                        >
+
+
+                                                        <LinearLayout
+                                                            android:orientation="vertical"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+
+                                                           >
+
+                                                            <TextView
+                                                                android:paddingLeft="15dp"
+                                                                android:paddingRight="15dp"
+                                                                android:layout_width="110dp"
+                                                                android:layout_height="60dp"
+                                                                android:layout_marginTop="5dp"
+                                                                android:layout_marginLeft="10dp"
+                                                                android:layout_marginRight="5dp"
+                                                                android:layout_marginBottom="5dp"
+                                                                android:elevation="2dp"
+                                                                android:background="@drawable/b_non_click_menu"
+                                                                android:gravity="center"
+                                                                android:text="ใส่ไข่"
+                                                                android:textColor="@color/textgrey"
+                                                                android:textSize="18sp" />
+
+                                                        </LinearLayout>
+
+
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="3"
+
+                                                      >
+
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+                                                            >
+                                                            <TextView
+                                                                android:paddingLeft="15dp"
+                                                                android:paddingRight="15dp"
+                                                                android:layout_width="110dp"
+                                                                android:layout_height="60dp"
+                                                                android:layout_marginTop="5dp"
+                                                                android:layout_marginBottom="5dp"
+                                                                android:layout_marginRight="5dp"
+                                                                android:layout_marginLeft="10dp"
+                                                                android:elevation="2dp"
+                                                                android:background="@drawable/b_non_click_menu"
+                                                                android:gravity="center"
+                                                                android:text="เพิ่มขาไก่"
+                                                                android:textColor="@color/textgrey"
+                                                                android:textSize="18sp" />
+
+
+                                                        </LinearLayout>
+
+
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="3"
+
+                                                        >
+
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+
+                                                            >
+                                                            <TextView
+                                                                android:paddingLeft="15dp"
+                                                                android:paddingRight="15dp"
+                                                                android:layout_width="110dp"
+                                                                android:layout_height="60dp"
+                                                                android:layout_marginTop="5dp"
+                                                                android:layout_marginLeft="10dp"
+                                                                android:layout_marginRight="5dp"
+                                                                android:layout_marginBottom="5dp"
+                                                                android:elevation="2dp"
+                                                                android:background="@drawable/b_non_click_menu"
+                                                                android:gravity="center"
+                                                                android:text="ไข่ดาว"
+                                                                android:textColor="@color/textgrey"
+                                                                android:textSize="18sp" />
+
+
+                                                        </LinearLayout>
+
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="50dp">
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+
+                                            </ScrollView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:paddingLeft="20dp"
+                                            android:paddingRight="20dp"
+                                            android:paddingBottom="0dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="จำนวน"
+                                                android:textColor="@color/grey"
+                                                android:textSize="16sp" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp"
+                                                android:layout_marginTop="10dp"
+                                                android:layout_marginRight="0dp"
+                                                android:orientation="horizontal"
+                                                android:gravity="center|start">
+
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/ic_forbidden_cancel_svgrepo_com"/>
+
+                                                <EditText
+                                                    android:layout_marginLeft="10dp"
+                                                    android:gravity="center"
+                                                    android:layout_width="80dp"
+                                                    android:hint="0"
+                                                    android:layout_height="50dp"
+                                                    android:background="@drawable/design_fram_edittext2"
+                                                    android:textSize="19sp" />
+
+                                                <ImageView
+                                                    android:layout_marginLeft="10dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/ic_add_svgrepo_com"/>
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp"
+                                                android:text="หมายเหตุ"
+                                                android:textColor="@color/grey"
+                                                android:textSize="16sp" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_marginRight="0dp">
+
+                                                <EditText
+                                                    android:textAlignment="textStart"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="100dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:background="@drawable/design_fram_edittext2"
+                                                    android:paddingLeft="10dp"
+                                                    android:textSize="19sp" />
+
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="50dp"
+                                                android:gravity="center">
+
+                                                <LinearLayout
+                                                    android:id="@+id/checkBill"
+                                                    android:layout_width="180dp"
+                                                    android:layout_height="60dp"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="15dp"
+                                                    android:layout_marginTop="0dp"
+                                                    android:layout_marginRight="15dp"
+                                                    android:layout_marginBottom="0dp"
+                                                    android:background="@drawable/design_fram4"
+                                                    android:elevation="2dp"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="สั่งอาหาร"
+                                                        android:textColor="@color/whiteDesign"
+                                                        android:textSize="18sp"
+                                                        android:textStyle="bold" />
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+                <!--        3-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0
+">
+
+                </LinearLayout>
+                <!--หมด3-->
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
