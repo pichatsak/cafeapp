@@ -2,6 +2,8 @@ package com.af.cafeapp;
 
 import static android.content.ContentValues.TAG;
 
+import static java.nio.file.Paths.get;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +29,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
@@ -35,6 +38,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.net.DatagramPacket;
 import java.util.ArrayList;
 
 public class stock extends AppCompatActivity {
@@ -87,6 +91,9 @@ public class stock extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
 
+
+
+
                         if (name_stock.getText().toString().isEmpty()) {
                             Toast.makeText(stock.this, "กรุณากรอกชื่อสต็อก", Toast.LENGTH_SHORT).show();
                         } else if (numaddstock.getText().toString().isEmpty()) {
@@ -94,7 +101,7 @@ public class stock extends AppCompatActivity {
                         } else if (unit_add_stock.getText().toString().isEmpty()) {
                             Toast.makeText(stock.this, "กรุณากรอกหน่วย", Toast.LENGTH_SHORT).show();
 
-                        } else {
+                        }  else {
                             data_add_stock();
                             dialog.dismiss();
                             Toast.makeText(stock.this, "เพิ่มรายการสำเร็จ", Toast.LENGTH_SHORT).show();

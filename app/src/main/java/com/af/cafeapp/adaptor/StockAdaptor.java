@@ -44,6 +44,7 @@ public class StockAdaptor extends RecyclerView.Adapter<StockAdaptor.ViewHolder> 
 
 
 
+
     // data is passed into the constructor
     public StockAdaptor(Context context, List<data_add_list_stock> data) {
         this.mInflater = LayoutInflater.from(context);
@@ -178,13 +179,22 @@ public class StockAdaptor extends RecyclerView.Adapter<StockAdaptor.ViewHolder> 
                     public void onClick(View view) {
                         if (num_lob.getText().toString().isEmpty()) {
                             Toast.makeText(mInflater.getContext(), "กรุณากรอกจำนวน", Toast.LENGTH_SHORT).show();
-                        } else {
+                        }
+                        else if (dataGet.getAdd_num_stock()==0){
+                            Toast.makeText(mInflater.getContext(), "จำนวนสต็อกหมดแล้ว", Toast.LENGTH_SHORT).show();
+                        }
+                        else if (Integer.valueOf(num_lob.getText().toString())>dataGet.getAdd_num_stock()){
+                            Toast.makeText(mInflater.getContext(), "จำนวนสต็อกมีน้อยกว่าจำนวนนำออก", Toast.LENGTH_SHORT).show();
+                        }
+
+
+                        else {
 
                             String getNum = num_lob.getText().toString();
                             int in = Integer.valueOf(getNum);
 
                             db.collection("data_add_list_stock").document(dataGet.getId()).update("add_num_stock", FieldValue.increment(-in));
-//                            db.collection("data_add_list_stock").document(dataGet.getId()).delete();
+
                             dialog.dismiss();
 
                         }

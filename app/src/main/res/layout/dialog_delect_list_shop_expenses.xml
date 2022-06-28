@@ -84,7 +84,7 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:id="@+id/cencle_delect"
+                                android:id="@+id/cencle_delect_shop_expenses"
 
                                 android:layout_width="150dp"
                                 android:layout_height="60dp"
@@ -104,6 +104,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/ok_delect_shop_expenses"
                                 android:layout_width="150dp"
                                 android:layout_height="60dp"
                                 android:layout_gravity="center"
