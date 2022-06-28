@@ -130,10 +130,21 @@
         <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/test.xml" value="0.34326171875" />
         <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.5866666666666667" />
         <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/menu/main.xml" value="0.34375" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram1.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram2.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram3.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram4.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram5.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/activity_open_daily.xml" value="0.2578125" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/dialog_add_stock.xml" value="0.33984375" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/dialog_add_topping.xml" value="0.33984375" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/dialog_open_daily.xml" value="0.2578125" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/fragment_home.xml" value="0.29296875" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/fragment_open_daily.xml" value="0.33984375" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

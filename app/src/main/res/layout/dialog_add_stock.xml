@@ -112,9 +112,9 @@
                                                 android:layout_height="50dp"
                                                 android:layout_marginTop="5dp"
                                                 android:background="@drawable/design_fram_edittext2"
+                                                android:inputType="text"
                                                 android:paddingLeft="10dp"
-                                                android:textSize="19sp"
-                                                android:inputType="text"/>
+                                                android:textSize="19sp" />
                                         </LinearLayout>
 
                                         <LinearLayout
@@ -132,11 +132,11 @@
 
                                             <EditText
                                                 android:id="@+id/numaddstock"
-                                                android:inputType="number"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="50dp"
                                                 android:layout_marginTop="5dp"
                                                 android:background="@drawable/design_fram_edittext2"
+                                                android:inputType="number"
                                                 android:paddingLeft="10dp"
                                                 android:textSize="19sp" />
                                         </LinearLayout>
@@ -156,11 +156,11 @@
 
                                             <EditText
                                                 android:id="@+id/unit_add_stock"
-                                                android:inputType="text"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="50dp"
                                                 android:layout_marginTop="5dp"
                                                 android:background="@drawable/design_fram_edittext2"
+                                                android:inputType="text"
                                                 android:paddingLeft="10dp"
                                                 android:textSize="19sp" />
                                         </LinearLayout>
