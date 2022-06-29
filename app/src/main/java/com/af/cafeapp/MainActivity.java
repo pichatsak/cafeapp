@@ -212,31 +212,31 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
 
-        menu1 = findViewById(R.id.menu1);
-        menu1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final Dialog dialog = new Dialog(MainActivity.this);
-                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                dialog.setCancelable(false);
-                dialog.setContentView(R.layout.dialog_click_menu);
-                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-                ex_dialog_click_menu = dialog.findViewById(R.id.ex_dialog_click_menu);
-                dialog.show();
-                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
-                int width = display.getWidth();
-                int height=display.getHeight();
-                Log.v("width", width+"");
-                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
-
-                ex_dialog_click_menu.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        dialog.dismiss();
-                    }
-                });
-            }
-        });
+//        menu1 = findViewById(R.id.menu1);
+//        menu1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                final Dialog dialog = new Dialog(MainActivity.this);
+//                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//                dialog.setCancelable(false);
+//                dialog.setContentView(R.layout.dialog_click_menu);
+//                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+//                ex_dialog_click_menu = dialog.findViewById(R.id.ex_dialog_click_menu);
+//                dialog.show();
+//                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
+//                int width = display.getWidth();
+//                int height=display.getHeight();
+//                Log.v("width", width+"");
+//                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
+//
+//                ex_dialog_click_menu.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        dialog.dismiss();
+//                    }
+//                });
+//            }
+//        });
 
 
 

@@ -130,19 +130,28 @@
         <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/layout/test.xml" value="0.34326171875" />
         <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.5866666666666667" />
         <entry key="..\:/Users/Jui/AndroidStudioProjects/CafeApp/app/src/main/res/menu/main.xml" value="0.34375" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/b_add.xml" value="0.287" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram1.xml" value="0.287" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram2.xml" value="0.287" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram3.xml" value="0.287" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram4.xml" value="0.287" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/design_fram5.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/ic_foodpanda_svgrepo_com.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/ic_grab_logo_svgrepo_com.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/ic_rbh_logo_01_e1635235514424.xml" value="0.287" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/drawable/ic_shop_svgrepo_com.xml" value="0.287" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/activity_open_daily.xml" value="0.2578125" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/activity_save_menu.xml" value="0.2578125" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/copy_cart.xml" value="0.33984375" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/dialog_add_menu_home.xml" value="0.2578125" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/dialog_add_stock.xml" value="0.33984375" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/dialog_add_topping.xml" value="0.33984375" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/dialog_change_type.xml" value="0.33984375" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/dialog_open_daily.xml" value="0.2578125" />
-        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/fragment_home.xml" value="0.29296875" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/fragment_home.xml" value="0.2578125" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/fragment_open_daily.xml" value="0.33984375" />
+        <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/row_menu.xml" value="0.33984375" />
         <entry key="..\:/Users/nitip/AndroidStudioProjects/cafeapp/app/src/main/res/layout/row_topping.xml" value="0.33984375" />
       </map>
     </option>

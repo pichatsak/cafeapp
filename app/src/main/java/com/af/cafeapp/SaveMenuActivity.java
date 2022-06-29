@@ -131,7 +131,11 @@ public class SaveMenuActivity extends AppCompatActivity {
             StorageReference ref = storageReference.child("picMenu/" + menuNewId);
             ref.putFile(selectedImageUri)
                     .addOnSuccessListener(
-                            taskSnapshot -> finish())
+                            taskSnapshot -> {
+                                Intent returnIntent = new Intent();
+                                setResult(Activity.RESULT_OK, returnIntent);
+                                finish();
+                            })
                     .addOnFailureListener(e -> Toast.makeText(SaveMenuActivity.this, "เกิดข้อผิดผลาดโปรดลองอีกครั้ง", Toast.LENGTH_SHORT).show());
 
         });
