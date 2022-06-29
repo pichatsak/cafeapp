@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
   //  private ImageView ex_dialog ; //ออกไดอาร็อคชำระเงิน
     private TextView checklish;
     private ImageView ex_dialog_g_and_f ;
-    private LinearLayout add_menu_home; //เพิ่มเมนู
+//    private LinearLayout add_menu_home; //เพิ่มเมนู
     private ImageView ex_dialog_addmenu_home;
     private LinearLayout add_topping;
     private ImageView ex_dialog_add_topping;
@@ -153,63 +153,63 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        add_menu_home = findViewById(R.id.add_menu_home);
+//        add_menu_home = findViewById(R.id.add_menu_home);
 
-        add_menu_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                final Dialog dialog = new Dialog(MainActivity.this);
-                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                dialog.setCancelable(false);
-                dialog.setContentView(R.layout.dialog_add_menu_home);
-                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-                ex_dialog_addmenu_home = dialog.findViewById(R.id.ex_dialog_addmenu_home);
-                dialog.show();
-                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
-                int width = display.getWidth();
-                int height=display.getHeight();
-                Log.v("width", width+"");
-                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
-
-                ex_dialog_addmenu_home.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        dialog.dismiss();
-                    }
-                });
-
-                add_topping = dialog.findViewById(R.id.add_topping);
-                add_topping.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-
-                        final Dialog dialog = new Dialog(MainActivity.this);
-                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                        dialog.setCancelable(false);
-                        dialog.setContentView(R.layout.dialog_add_topping);
-                        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-                        ex_dialog_add_topping = dialog.findViewById(R.id.ex_dialog_add_topping);
-                        dialog.show();
-                        Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
-                        int width = display.getWidth();
-                        int height=display.getHeight();
-                        Log.v("width", width+"");
-                        dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
-
-                        ex_dialog_add_topping.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                dialog.dismiss();
-                            }
-                        });
-
-
-                    }
-                });
-
-            }
-        });
+//        add_menu_home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                final Dialog dialog = new Dialog(MainActivity.this);
+//                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//                dialog.setCancelable(false);
+//                dialog.setContentView(R.layout.dialog_add_menu_home);
+//                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+//                ex_dialog_addmenu_home = dialog.findViewById(R.id.ex_dialog_addmenu_home);
+//                dialog.show();
+//                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
+//                int width = display.getWidth();
+//                int height=display.getHeight();
+//                Log.v("width", width+"");
+//                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
+//
+//                ex_dialog_addmenu_home.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        dialog.dismiss();
+//                    }
+//                });
+//
+//                add_topping = dialog.findViewById(R.id.add_topping);
+//                add_topping.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//
+//                        final Dialog dialog = new Dialog(MainActivity.this);
+//                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//                        dialog.setCancelable(false);
+//                        dialog.setContentView(R.layout.dialog_add_topping);
+//                        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+//                        ex_dialog_add_topping = dialog.findViewById(R.id.ex_dialog_add_topping);
+//                        dialog.show();
+//                        Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
+//                        int width = display.getWidth();
+//                        int height=display.getHeight();
+//                        Log.v("width", width+"");
+//                        dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
+//
+//                        ex_dialog_add_topping.setOnClickListener(new View.OnClickListener() {
+//                            @Override
+//                            public void onClick(View view) {
+//                                dialog.dismiss();
+//                            }
+//                        });
+//
+//
+//                    }
+//                });
+//
+//            }
+//        });
 
 
         menu1 = findViewById(R.id.menu1);

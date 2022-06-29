@@ -18,11 +18,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.af.cafeapp.OpenDailyActivity;
 import com.af.cafeapp.R;
+import com.af.cafeapp.SaveMenuActivity;
 import com.af.cafeapp.databinding.FragmentHomeBinding;
 import com.af.cafeapp.models.MonthData;
 import com.af.cafeapp.tools.DateTool;
@@ -44,23 +46,32 @@ public class HomeFragment extends Fragment {
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
     private String keyMonthData = "";
     final static int LAUNCH_OPEN_SALE = 1;
+    final static int LAUNCH_SAVE_MENU = 2;
+    LinearLayout add_menu_home;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-
+        add_menu_home = root.findViewById(R.id.add_menu_home);
         menuBar = root.findViewById(R.id.menuBar);
         menuBar.setOnClickListener(view -> {
             DrawerLayout drawer = container.getRootView().findViewById(R.id.drawer_layout);
             drawer.open();
         });
 
-
         checkNewMonthData();
+        goToAddMenu();
+
         return root;
+    }
+
+    private void goToAddMenu() {
+        add_menu_home.setOnClickListener(view -> {
+            Intent intent = new Intent(getContext(), SaveMenuActivity.class);
+            startActivityForResult(intent,LAUNCH_SAVE_MENU);
+        });
     }
 
     private void checkNewMonthData() {
@@ -113,12 +124,12 @@ public class HomeFragment extends Fragment {
                         openDialogOpenSale();
                     }else{
                         Map<String, Object> value = (Map<String, Object>) ListDayMap.get(dateCur);
-                        Log.d("CHK_DATA",value.toString());
-                        if(value.size()==0){
+                        if(value == null){
                             openDialogOpenSale();
                         }else{
                             isOpenSale = true;
                         }
+
                     }
 
                 } else {

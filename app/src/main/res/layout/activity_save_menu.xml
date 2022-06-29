@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SaveMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <!--1-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0">
+                    <!--                    1.05-->
+
+                </LinearLayout>
+
+                <!--  2      -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+
+                    android:background="@drawable/b_dialog_g_f"
+                    android:elevation="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <!--7.9-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="30dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="40dp"
+                            android:paddingBottom="40dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center|center_vertical"
+                                    android:gravity="center_vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/back"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="true"
+                                        android:foreground="?android:attr/selectableItemBackground"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            app:srcCompat="@drawable/back" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="เพิ่มเมนู"
+                                        android:textColor="@color/main1"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+
+                                    <LinearLayout
+                                        android:layout_width="150dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="0"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=""
+                                            android:textColor="@color/grey"
+                                            android:textSize="16sp" />
+
+                                        <LinearLayout
+                                            android:id="@+id/choosePic"
+                                            android:foreground="?android:attr/selectableItemBackground"
+                                            android:clickable="true"
+                                            android:layout_width="130dp"
+                                            android:layout_height="130dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:padding="10dp"
+                                            android:background="@drawable/b_picture_upload"
+                                            android:elevation="6dp"
+                                            android:gravity="center"
+
+                                            >
+
+                                            <ImageView
+                                                android:id="@+id/imgShow"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="0dp"
+                                            android:layout_marginTop="15dp"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="อัพโหลดรูปภาพ"
+                                                android:textColor="@color/grey"
+                                                android:textSize="16sp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2"
+                                        android:orientation="vertical"
+
+                                        android:paddingLeft="20dp"
+                                        android:paddingTop="10dp"
+                                        android:paddingRight="0dp">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal"
+                                            android:weightSum="2">
+
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginRight="15dp"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="0dp"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="ชื่อเมนู"
+                                                        android:textColor="@color/grey"
+                                                        android:textSize="16sp" />
+
+                                                    <EditText
+                                                        android:text="ต้มยำ"
+                                                        android:id="@+id/menuName"
+                                                        android:singleLine="true"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="50dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:background="@drawable/design_fram_edittext2"
+                                                        android:paddingLeft="10dp"
+                                                        android:textSize="19sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginTop="10dp"
+                                                    android:orientation="vertical">
+
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:orientation="horizontal"
+                                                        android:visibility="gone">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="0dp"
+                                                            android:layout_marginTop="10dp"
+                                                            android:gravity="center|start"
+                                                            android:orientation="horizontal">
+
+                                                            <RelativeLayout
+
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content">
+
+
+                                                                <ImageView
+                                                                    android:layout_width="25dp"
+                                                                    android:layout_height="25dp"
+                                                                    android:layout_gravity="center"
+                                                                    android:background="@drawable/design_circle" />
+
+                                                                <ImageView
+
+                                                                    android:layout_width="13dp"
+                                                                    android:layout_height="13dp"
+                                                                    android:layout_centerInParent="true"
+                                                                    android:layout_gravity="center"
+                                                                    android:background="@drawable/circledark" />
+                                                            </RelativeLayout>
+
+                                                            <LinearLayout
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginLeft="10dp"
+                                                                    android:text="หน้าร้าน"
+                                                                    android:textColor="@color/black"
+                                                                    android:textSize="16sp"
+                                                                    android:textStyle="bold" />
+                                                            </LinearLayout>
+
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="10dp"
+                                                            android:layout_marginTop="10dp"
+                                                            android:gravity="center|start"
+                                                            android:orientation="horizontal">
+
+                                                            <RelativeLayout
+
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content">
+
+
+                                                                <ImageView
+                                                                    android:layout_width="25dp"
+                                                                    android:layout_height="25dp"
+                                                                    android:layout_gravity="center"
+                                                                    android:background="@drawable/design_circle" />
+
+                                                                <ImageView
+
+                                                                    android:layout_width="13dp"
+
+                                                                    android:layout_height="13dp"
+                                                                    android:layout_centerInParent="true"
+                                                                    android:layout_gravity="center"
+                                                                    android:background="@drawable/circledark"
+                                                                    android:visibility="gone" />
+                                                            </RelativeLayout>
+
+                                                            <LinearLayout
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginLeft="10dp"
+                                                                    android:text="Food Panda"
+                                                                    android:textColor="@color/black"
+                                                                    android:textSize="16sp"
+                                                                    android:textStyle="bold" />
+                                                            </LinearLayout>
+
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="10dp"
+                                                            android:layout_marginTop="10dp"
+                                                            android:gravity="center|start"
+                                                            android:orientation="horizontal">
+
+                                                            <RelativeLayout
+
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content">
+
+
+                                                                <ImageView
+                                                                    android:layout_width="25dp"
+                                                                    android:layout_height="25dp"
+                                                                    android:layout_gravity="center"
+                                                                    android:background="@drawable/design_circle" />
+
+                                                                <ImageView
+                                                                    android:layout_width="13dp"
+
+                                                                    android:layout_height="13dp"
+                                                                    android:layout_centerInParent="true"
+                                                                    android:layout_gravity="center"
+                                                                    android:background="@drawable/circledark"
+                                                                    android:visibility="gone" />
+                                                            </RelativeLayout>
+
+                                                            <LinearLayout
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginLeft="10dp"
+                                                                    android:text="Grab"
+                                                                    android:textColor="@color/black"
+                                                                    android:textSize="16sp"
+                                                                    android:textStyle="bold" />
+                                                            </LinearLayout>
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content">
+
+                                                        <RadioGroup
+                                                            android:id="@+id/typeTop"
+                                                            android:layout_width="fill_parent"
+                                                            android:layout_height="fill_parent"
+                                                            android:gravity="center_vertical"
+                                                            android:orientation="vertical">
+
+                                                            <RadioButton
+                                                                android:id="@+id/sale"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:checked="true"
+                                                                android:text="หน้าร้าน"
+                                                                android:textSize="17sp" />
+
+                                                            <RadioButton
+                                                                android:id="@+id/grab"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:text="Grab"
+                                                                android:textSize="17sp" />
+
+                                                            <RadioButton
+                                                                android:id="@+id/food"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:text="Food Panda"
+                                                                android:textSize="17sp" />
+
+                                                            <RadioButton
+                                                                android:id="@+id/robin"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:text="Robin Hood"
+                                                                android:textSize="17sp" />
+
+                                                        </RadioGroup>
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_marginTop="15dp"
+                                                        android:orientation="vertical">
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginTop="0dp"
+                                                            android:orientation="vertical">
+
+                                                            <TextView
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:text="ธรรมดา"
+                                                                android:textColor="@color/grey"
+                                                                android:textSize="16sp" />
+
+                                                            <EditText
+                                                                android:id="@+id/priceMenu1"
+                                                                android:inputType="number"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="50dp"
+                                                                android:layout_marginTop="5dp"
+                                                                android:background="@drawable/design_fram_edittext2"
+                                                                android:paddingLeft="10dp"
+                                                                android:textSize="19sp" />
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginTop="10dp"
+                                                            android:orientation="vertical">
+
+                                                            <TextView
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:text="พิเศษ"
+                                                                android:textColor="@color/grey"
+                                                                android:textSize="16sp" />
+
+                                                            <EditText
+                                                                android:id="@+id/priceMenu2"
+                                                                android:inputType="number"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="50dp"
+                                                                android:layout_marginTop="5dp"
+                                                                android:background="@drawable/design_fram_edittext2"
+                                                                android:paddingLeft="10dp"
+                                                                android:textSize="19sp" />
+                                                        </LinearLayout>
+
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginTop="50dp"
+                                                            android:gravity="center">
+
+                                                            <LinearLayout
+                                                                android:clickable="true"
+                                                                android:id="@+id/save"
+                                                                android:foreground="?android:attr/selectableItemBackground"
+                                                                android:layout_width="180dp"
+                                                                android:layout_height="60dp"
+                                                                android:layout_gravity="center"
+                                                                android:layout_marginLeft="15dp"
+                                                                android:layout_marginTop="0dp"
+                                                                android:layout_marginRight="15dp"
+                                                                android:layout_marginBottom="0dp"
+                                                                android:background="@drawable/design_fram4"
+                                                                android:elevation="2dp"
+                                                                android:gravity="center">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="เพิ่มเมนู"
+                                                                    android:textColor="@color/whiteDesign"
+                                                                    android:textSize="18sp"
+                                                                    android:textStyle="bold" />
+
+                                                            </LinearLayout>
+                                                        </LinearLayout>
+
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginLeft="15dp"
+                                                android:layout_marginTop="0dp"
+
+                                                android:layout_weight="1"
+                                                android:background="@drawable/b_topping_menu_add"
+                                                android:orientation="vertical">
+
+                                                <ScrollView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scrollbars="none">
+
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:orientation="vertical">
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="10dp"
+                                                            android:layout_marginTop="10dp"
+                                                            android:gravity="start|center"
+                                                            android:orientation="horizontal">
+
+
+                                                            <LinearLayout
+                                                                android:id="@+id/add_topping"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:gravity="end">
+
+                                                                <ImageView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginRight="0dp"
+                                                                    android:background="@drawable/ic_baseline_add_box_24" />
+                                                            </LinearLayout>
+
+                                                            <LinearLayout
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_marginLeft="10dp"
+                                                                android:gravity="center">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="เพิ่มท็อปปิ้ง"
+                                                                    android:textColor="@color/black"
+                                                                    android:textSize="16sp"
+                                                                    android:textStyle="bold" />
+                                                            </LinearLayout>
+
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="15dp"
+                                                            android:layout_marginTop="10dp"
+                                                            android:layout_marginRight="15dp">
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="2px"
+                                                                android:background="@color/textmenu">
+
+                                                            </LinearLayout>
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_marginTop="5dp"
+                                                            android:orientation="vertical">
+                                                            <androidx.recyclerview.widget.RecyclerView
+                                                                android:id="@+id/viewTopping"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                            </androidx.recyclerview.widget.RecyclerView>
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_marginTop="5dp"
+                                                            android:orientation="vertical"
+                                                            android:visibility="gone">
+
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="50dp"
+                                                                android:layout_marginLeft="15dp"
+                                                                android:layout_marginTop="10dp"
+                                                                android:layout_marginRight="15dp"
+                                                                android:background="@drawable/b_topping"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:weightSum="2">
+
+                                                                <LinearLayout
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="1"
+                                                                    android:gravity="center|end">
+
+                                                                    <TextView
+                                                                        android:layout_width="wrap_content"
+                                                                        android:layout_height="wrap_content"
+                                                                        android:layout_marginRight="10dp"
+                                                                        android:gravity="center"
+                                                                        android:text="ใส่ไข่"
+                                                                        android:textColor="@color/black"
+                                                                        android:textSize="16sp" />
+                                                                </LinearLayout>
+
+                                                                <LinearLayout
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="1"
+
+                                                                    >
+
+
+                                                                    <LinearLayout
+                                                                        android:layout_width="match_parent"
+                                                                        android:layout_height="match_parent"
+                                                                        android:orientation="horizontal"
+                                                                        android:weightSum="2">
+
+                                                                        <LinearLayout
+                                                                            android:layout_width="0dp"
+                                                                            android:layout_height="match_parent"
+                                                                            android:layout_weight="1.5"
+                                                                            android:gravity="center|start">
+
+                                                                            <TextView
+                                                                                android:layout_width="wrap_content"
+                                                                                android:layout_height="wrap_content"
+                                                                                android:layout_marginLeft="0dp"
+                                                                                android:gravity="center"
+                                                                                android:text="10.00"
+                                                                                android:textColor="@color/black"
+                                                                                android:textSize="16sp" />
+                                                                        </LinearLayout>
+
+
+                                                                        <LinearLayout
+                                                                            android:layout_width="0dp"
+                                                                            android:layout_height="match_parent"
+                                                                            android:layout_weight="0.5"
+                                                                            android:gravity="center">
+
+                                                                            <ImageView
+                                                                                android:layout_width="wrap_content"
+                                                                                android:layout_height="wrap_content"
+                                                                                android:background="@drawable/clear"
+                                                                                android:backgroundTint="@color/textred" />
+
+                                                                        </LinearLayout>
+
+
+                                                                    </LinearLayout>
+
+
+                                                                </LinearLayout>
+
+
+                                                            </LinearLayout>
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="50dp"
+                                                                android:layout_marginLeft="15dp"
+                                                                android:layout_marginTop="10dp"
+                                                                android:layout_marginRight="15dp"
+                                                                android:background="@drawable/b_topping"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:weightSum="2">
+
+                                                                <LinearLayout
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="1"
+                                                                    android:gravity="center|end">
+
+                                                                    <TextView
+                                                                        android:layout_width="wrap_content"
+                                                                        android:layout_height="wrap_content"
+                                                                        android:layout_marginRight="10dp"
+                                                                        android:gravity="center"
+                                                                        android:text="เพิ่มขาไก่"
+                                                                        android:textColor="@color/black"
+                                                                        android:textSize="16sp" />
+                                                                </LinearLayout>
+
+                                                                <LinearLayout
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="1"
+
+                                                                    >
+
+
+                                                                    <LinearLayout
+                                                                        android:layout_width="match_parent"
+                                                                        android:layout_height="match_parent"
+                                                                        android:orientation="horizontal"
+                                                                        android:weightSum="2">
+
+                                                                        <LinearLayout
+                                                                            android:layout_width="0dp"
+                                                                            android:layout_height="match_parent"
+                                                                            android:layout_weight="1.5"
+                                                                            android:gravity="center|start">
+
+                                                                            <TextView
+                                                                                android:layout_width="wrap_content"
+                                                                                android:layout_height="wrap_content"
+                                                                                android:layout_marginLeft="0dp"
+                                                                                android:gravity="center"
+                                                                                android:text="20.00"
+                                                                                android:textColor="@color/black"
+                                                                                android:textSize="16sp" />
+                                                                        </LinearLayout>
+
+
+                                                                        <LinearLayout
+                                                                            android:layout_width="0dp"
+                                                                            android:layout_height="match_parent"
+                                                                            android:layout_weight="0.5"
+                                                                            android:gravity="center">
+
+                                                                            <ImageView
+                                                                                android:layout_width="wrap_content"
+                                                                                android:layout_height="wrap_content"
+                                                                                android:background="@drawable/clear"
+                                                                                android:backgroundTint="@color/textred" />
+
+                                                                        </LinearLayout>
+
+
+                                                                    </LinearLayout>
+
+
+                                                                </LinearLayout>
+
+
+                                                            </LinearLayout>
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="50dp"
+                                                                android:layout_marginLeft="15dp"
+                                                                android:layout_marginTop="10dp"
+                                                                android:layout_marginRight="15dp"
+                                                                android:background="@drawable/b_topping"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:weightSum="2">
+
+                                                                <LinearLayout
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="1"
+                                                                    android:gravity="center|end">
+
+                                                                    <TextView
+                                                                        android:layout_width="wrap_content"
+                                                                        android:layout_height="wrap_content"
+                                                                        android:layout_marginRight="10dp"
+                                                                        android:gravity="center"
+                                                                        android:text="ไข่ด่าว"
+                                                                        android:textColor="@color/black"
+                                                                        android:textSize="16sp" />
+                                                                </LinearLayout>
+
+                                                                <LinearLayout
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="1"
+
+                                                                    >
+
+
+                                                                    <LinearLayout
+                                                                        android:layout_width="match_parent"
+                                                                        android:layout_height="match_parent"
+                                                                        android:orientation="horizontal"
+                                                                        android:weightSum="2">
+
+                                                                        <LinearLayout
+                                                                            android:layout_width="0dp"
+                                                                            android:layout_height="match_parent"
+                                                                            android:layout_weight="1.5"
+                                                                            android:gravity="center|start">
+
+                                                                            <TextView
+                                                                                android:layout_width="wrap_content"
+                                                                                android:layout_height="wrap_content"
+                                                                                android:layout_marginLeft="0dp"
+                                                                                android:gravity="center"
+                                                                                android:text="10.00"
+                                                                                android:textColor="@color/black"
+                                                                                android:textSize="16sp" />
+                                                                        </LinearLayout>
+
+
+                                                                        <LinearLayout
+                                                                            android:layout_width="0dp"
+                                                                            android:layout_height="match_parent"
+                                                                            android:layout_weight="0.5"
+                                                                            android:gravity="center">
+
+                                                                            <ImageView
+                                                                                android:layout_width="wrap_content"
+                                                                                android:layout_height="wrap_content"
+                                                                                android:background="@drawable/clear"
+                                                                                android:backgroundTint="@color/textred" />
+
+                                                                        </LinearLayout>
+
+
+                                                                    </LinearLayout>
+
+
+                                                                </LinearLayout>
+
+
+                                                            </LinearLayout>
+
+
+                                                        </LinearLayout>
+
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="50dp">
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+                                                </ScrollView>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--        3-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+                </LinearLayout>
+                <!--หมด3-->
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

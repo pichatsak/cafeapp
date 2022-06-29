@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="400dp"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical">
 
     <LinearLayout
@@ -19,20 +21,13 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:weightSum="10">
-                <!--1-->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2.55">
-
-                </LinearLayout>
 
                 <!--  2      -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="4.9"
+                    android:layout_weight="10"
                     android:background="@drawable/b_dialog_g_f"
                     android:elevation="0dp"
                     android:gravity="center"
@@ -55,6 +50,7 @@
 
 
                                 <ImageView
+                                    android:clickable="true"
                                     android:id="@+id/ex_dialog_add_topping"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -72,7 +68,10 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical"
-                                    android:padding="40dp">
+                                    android:paddingLeft="40dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="40dp"
+                                    android:paddingBottom="20dp">
 
 
                                     <LinearLayout
@@ -107,6 +106,8 @@
                                                 android:textSize="16sp" />
 
                                             <EditText
+                                                android:singleLine="true"
+                                                android:id="@+id/nameTopping"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="50dp"
                                                 android:layout_marginTop="5dp"
@@ -124,36 +125,16 @@
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:text="จำนวนเงิน (ทั่วไป)"
+                                                android:text="จำนวนเงิน (หน้าร้าน)"
                                                 android:textColor="@color/grey"
                                                 android:textSize="16sp" />
 
                                             <EditText
+                                                android:id="@+id/priceTopping"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="50dp"
                                                 android:layout_marginTop="5dp"
-                                                android:background="@drawable/design_fram_edittext2"
-                                                android:paddingLeft="10dp"
-                                                android:textSize="19sp" />
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="10dp"
-                                            android:orientation="vertical">
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text="จำนวนเงิน (Food Panda)"
-                                                android:textColor="@color/grey"
-                                                android:textSize="16sp" />
-
-                                            <EditText
-                                                android:layout_width="match_parent"
-                                                android:layout_height="50dp"
-                                                android:layout_marginTop="5dp"
+                                                android:inputType="number"
                                                 android:background="@drawable/design_fram_edittext2"
                                                 android:paddingLeft="10dp"
                                                 android:textSize="19sp" />
@@ -173,14 +154,63 @@
                                                 android:textSize="16sp" />
 
                                             <EditText
+                                                android:id="@+id/priceToppingGrab"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="50dp"
                                                 android:layout_marginTop="5dp"
                                                 android:background="@drawable/design_fram_edittext2"
                                                 android:paddingLeft="10dp"
+                                                android:inputType="number"
                                                 android:textSize="19sp" />
                                         </LinearLayout>
 
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="จำนวนเงิน (Food Panda)"
+                                                android:textColor="@color/grey"
+                                                android:textSize="16sp" />
+
+                                            <EditText
+                                                android:id="@+id/priceToppingFoodPanda"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp"
+                                                android:layout_marginTop="5dp"
+                                                android:background="@drawable/design_fram_edittext2"
+                                                android:paddingLeft="10dp"
+                                                android:inputType="number"
+                                                android:textSize="19sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="จำนวนเงิน (Robin Hood)"
+                                                android:textColor="@color/grey"
+                                                android:textSize="16sp" />
+
+                                            <EditText
+                                                android:id="@+id/priceToppingRobinHood"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp"
+                                                android:layout_marginTop="5dp"
+                                                android:background="@drawable/design_fram_edittext2"
+                                                android:paddingLeft="10dp"
+                                                android:inputType="number"
+                                                android:textSize="19sp" />
+                                        </LinearLayout>
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
@@ -189,7 +219,9 @@
                                             android:gravity="center">
 
                                             <LinearLayout
-
+                                                android:id="@+id/confirmAdd"
+                                                android:clickable="true"
+                                                android:foreground="?android:attr/selectableItemBackground"
                                                 android:layout_width="200dp"
                                                 android:layout_height="60dp"
                                                 android:layout_gravity="center"
@@ -232,14 +264,7 @@
                     </ScrollView>
 
                 </LinearLayout>
-                <!--        3-->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2.55">
 
-                </LinearLayout>
-                <!--หมด3-->
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
