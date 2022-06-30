@@ -40,196 +40,193 @@
                     android:orientation="vertical">
 
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                        <LinearLayout
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_height="match_parent">
 
-                            <RelativeLayout
+
+                            <ImageView
+                                android:id="@+id/ex_dialog_click_menu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/exit_b"
+                                android:elevation="2dp"
+                                android:padding="5dp"
+                                android:src="@drawable/ic_baseline_clear_24" />
+
+
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-
-                                <ImageView
-                                    android:id="@+id/ex_dialog_click_menu"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_marginBottom="5dp"
-                                    android:background="@drawable/exit_b"
-                                    android:elevation="2dp"
-                                    android:padding="5dp"
-                                    android:src="@drawable/ic_baseline_clear_24" />
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingLeft="30dp"
+                                android:paddingTop="40dp"
+                                android:paddingRight="40dp"
+                                android:paddingBottom="40dp">
 
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical"
-                                    android:paddingLeft="30dp"
-                                    android:paddingTop="40dp"
-                                    android:paddingBottom="40dp"
-                                    android:paddingRight="40dp"
-                                    >
+                                    android:layout_height="wrap_content">
 
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content">
-
-                                        <TextView
-                                            android:layout_marginLeft="10dp"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="ต้มขมใส้อ่อน"
-                                            android:textColor="@color/main1"
-                                            android:textSize="20sp"
-                                            android:textStyle="bold" />
-
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
+                                    <TextView
+                                        android:id="@+id/showNameMenu"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="20dp">
+                                        android:layout_marginLeft="10dp"
+                                        android:text="ชื่อเมนู"
+                                        android:textColor="@color/main1"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
 
-                                        <TextView
-                                            android:layout_marginLeft="10dp"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="ประเภทลูกค้า : "
-                                            android:textColor="@color/grey"
-                                            android:textSize="16sp" />
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="ทั่วไป"
-                                            android:textColor="@color/black"
-                                            android:textSize="16sp" />
-                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="เลือกรายละเอียดเพิ่มเติม"
+                                        android:textColor="@color/grey"
+                                        android:textSize="16sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
 
                                     <LinearLayout
-                                        android:layout_width="match_parent"
+
+                                        android:layout_width="0dp"
                                         android:layout_height="match_parent"
-                                        android:layout_marginTop="20dp"
-                                        android:orientation="horizontal"
-                                        android:weightSum="2">
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
 
                                         <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
 
-                                            android:layout_width="0dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:orientation="vertical"
-                                            android:layout_marginRight="20dp">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content">
-
-                                                <TextView
-                                                    android:layout_marginLeft="10dp"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:text="ขนาด"
-                                                    android:textColor="@color/black"
-                                                    android:textSize="18sp"
-                                                    android:textStyle="bold" />
-                                            </LinearLayout>
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
+                                            <TextView
+                                                android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginTop="0dp"
-                                                android:layout_marginBottom="0dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:text="ขนาด"
+                                                android:textColor="@color/black"
+                                                android:textSize="18sp"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
 
-                                                android:visibility="visible">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
+                                            android:layout_marginBottom="0dp"
+
+                                            android:visibility="visible">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginTop="5dp"
+                                                android:orientation="horizontal"
+                                                android:weightSum="9">
 
                                                 <LinearLayout
-                                                    android:layout_width="match_parent"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="match_parent"
-                                                    android:orientation="horizontal"
-                                                    android:layout_marginTop="5dp"
-                                                    android:weightSum="9">
+                                                    android:layout_weight="3"
+
+                                                    >
+
 
                                                     <LinearLayout
-                                                        android:layout_width="0dp"
-                                                        android:layout_height="match_parent"
-                                                        android:layout_weight="3"
+                                                        android:layout_width="wrap_content"
+
+                                                        android:layout_height="wrap_content"
+                                                        android:orientation="vertical"
 
                                                         >
 
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-
-                                                            >
-
-                                                            <TextView
-                                                                android:paddingLeft="15dp"
-                                                                android:paddingRight="15dp"
-                                                                android:layout_width="110dp"
-                                                                android:layout_height="60dp"
-                                                                android:layout_marginTop="5dp"
-                                                                android:layout_marginBottom="5dp"
-                                                                android:layout_marginRight="5dp"
-                                                                android:layout_marginLeft="10dp"
-                                                                android:background="@drawable/b_click_menu_path"
-                                                                android:gravity="center"
-                                                                android:elevation="2dp"
-                                                                android:text="ธรรมดา"
-                                                                android:textColor="@color/white"
-                                                                android:textSize="18sp" />
-
-                                                        </LinearLayout>
-
+                                                        <TextView
+                                                            android:id="@+id/chooseNm"
+                                                            android:layout_width="110dp"
+                                                            android:layout_height="60dp"
+                                                            android:layout_marginLeft="10dp"
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginRight="5dp"
+                                                            android:layout_marginBottom="5dp"
+                                                            android:background="@drawable/b_click_menu_path"
+                                                            android:clickable="true"
+                                                            android:elevation="2dp"
+                                                            android:foreground="?android:attr/selectableItemBackground"
+                                                            android:gravity="center"
+                                                            android:paddingLeft="15dp"
+                                                            android:paddingRight="15dp"
+                                                            android:text="ธรรมดา"
+                                                            android:textColor="@color/white"
+                                                            android:textSize="18sp" />
 
                                                     </LinearLayout>
 
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="3"
+
+                                                    >
+
+
                                                     <LinearLayout
-                                                        android:layout_width="0dp"
-                                                        android:layout_height="match_parent"
-                                                        android:layout_weight="3"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
 
                                                         >
 
+                                                        <TextView
+                                                            android:id="@+id/chooseSp"
+                                                            android:layout_width="110dp"
+                                                            android:layout_height="60dp"
+                                                            android:layout_marginLeft="10dp"
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginRight="5dp"
+                                                            android:layout_marginBottom="5dp"
+                                                            android:background="@drawable/b_non_click_menu"
+                                                            android:clickable="true"
+                                                            android:elevation="2dp"
+                                                            android:foreground="?android:attr/selectableItemBackground"
+                                                            android:gravity="center"
+                                                            android:paddingLeft="15dp"
+                                                            android:paddingRight="15dp"
+                                                            android:text="พิเศษ"
 
-                                                        <LinearLayout
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-
-                                                            >
-                                                            <TextView
-                                                                android:paddingLeft="15dp"
-                                                                android:paddingRight="15dp"
-                                                                android:layout_width="110dp"
-                                                                android:layout_height="60dp"
-                                                                android:layout_marginTop="5dp"
-                                                                android:background="@drawable/b_non_click_menu"
-                                                                android:gravity="center"
-                                                                android:text="พิเศษ"
-                                                                android:elevation="2dp"
-                                                                android:layout_marginLeft="10dp"
-                                                                android:layout_marginRight="5dp"
-                                                                android:layout_marginBottom="5dp"
-
-                                                                android:textColor="@color/textgrey"
-                                                                android:textSize="18sp" />
-
-
-                                                        </LinearLayout>
+                                                            android:textColor="@color/textgrey"
+                                                            android:textSize="18sp" />
 
 
                                                     </LinearLayout>
-
 
 
                                                 </LinearLayout>
@@ -237,27 +234,29 @@
 
                                             </LinearLayout>
 
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="20dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginTop="20dp">
-
-                                                <TextView
-                                                    android:layout_marginLeft="10dp"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:text="ท็อปปิ้ง"
-                                                    android:textColor="@color/black"
-                                                    android:textSize="18sp"
-                                                    android:textStyle="bold" />
-                                            </LinearLayout>
+                                                android:layout_marginLeft="10dp"
+                                                android:text="ท็อปปิ้ง"
+                                                android:textColor="@color/black"
+                                                android:textSize="18sp"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
 
 
-                                            <ScrollView
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:scrollbars="none">
-
+                                        <ScrollView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scrollbars="none">
 
 
                                             <LinearLayout
@@ -272,128 +271,29 @@
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:orientation="horizontal"
                                                     android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
                                                     android:paddingRight="5dp"
-                                                    android:weightSum="9">
+                                                    android:weightSum="2">
 
                                                     <LinearLayout
                                                         android:layout_width="0dp"
                                                         android:layout_height="match_parent"
-                                                        android:layout_weight="3"
+                                                        android:layout_weight="2"
 
                                                         >
 
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-
-
-                                                           >
-
-                                                            <TextView
-                                                                android:paddingLeft="15dp"
-                                                                android:paddingRight="15dp"
-                                                                android:layout_width="110dp"
-                                                                android:layout_height="60dp"
-                                                                android:layout_marginTop="5dp"
-                                                                android:layout_marginLeft="10dp"
-                                                                android:layout_marginRight="5dp"
-                                                                android:layout_marginBottom="5dp"
-                                                                android:elevation="2dp"
-                                                                android:background="@drawable/b_non_click_menu"
-                                                                android:gravity="center"
-                                                                android:text="ใส่ไข่"
-                                                                android:textColor="@color/textgrey"
-                                                                android:textSize="18sp" />
-
-                                                        </LinearLayout>
+                                                        <androidx.recyclerview.widget.RecyclerView
+                                                            android:layout_width="match_parent"
+                                                            android:id="@+id/viewTopping"
+                                                            android:layout_height="match_parent"/>
 
 
                                                     </LinearLayout>
 
-                                                    <LinearLayout
-                                                        android:layout_width="0dp"
-                                                        android:layout_height="match_parent"
-                                                        android:layout_weight="3"
 
-                                                      >
-
-
-                                                        <LinearLayout
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-
-                                                            >
-                                                            <TextView
-                                                                android:paddingLeft="15dp"
-                                                                android:paddingRight="15dp"
-                                                                android:layout_width="110dp"
-                                                                android:layout_height="60dp"
-                                                                android:layout_marginTop="5dp"
-                                                                android:layout_marginBottom="5dp"
-                                                                android:layout_marginRight="5dp"
-                                                                android:layout_marginLeft="10dp"
-                                                                android:elevation="2dp"
-                                                                android:background="@drawable/b_non_click_menu"
-                                                                android:gravity="center"
-                                                                android:text="เพิ่มขาไก่"
-                                                                android:textColor="@color/textgrey"
-                                                                android:textSize="18sp" />
-
-
-                                                        </LinearLayout>
-
-
-                                                    </LinearLayout>
-
-                                                    <LinearLayout
-                                                        android:layout_width="0dp"
-                                                        android:layout_height="match_parent"
-                                                        android:layout_weight="3"
-
-                                                        >
-
-
-                                                        <LinearLayout
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-
-                                                            >
-                                                            <TextView
-                                                                android:paddingLeft="15dp"
-                                                                android:paddingRight="15dp"
-                                                                android:layout_width="110dp"
-                                                                android:layout_height="60dp"
-                                                                android:layout_marginTop="5dp"
-                                                                android:layout_marginLeft="10dp"
-                                                                android:layout_marginRight="5dp"
-                                                                android:layout_marginBottom="5dp"
-                                                                android:elevation="2dp"
-                                                                android:background="@drawable/b_non_click_menu"
-                                                                android:gravity="center"
-                                                                android:text="ไข่ดาว"
-                                                                android:textColor="@color/textgrey"
-                                                                android:textSize="18sp" />
-
-
-                                                        </LinearLayout>
-
-
-                                                    </LinearLayout>
 
                                                 </LinearLayout>
-
-
-
-
-
-
-
-
-
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -405,127 +305,141 @@
                                             </LinearLayout>
 
 
-                                            </ScrollView>
+                                        </ScrollView>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="20dp"
+                                        android:paddingRight="20dp"
+                                        android:paddingBottom="0dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="จำนวน"
+                                            android:textColor="@color/grey"
+                                            android:textSize="16sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginRight="0dp"
+                                            android:gravity="center|start"
+                                            android:orientation="horizontal">
+
+
+                                            <ImageView
+                                                android:id="@+id/delNum"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/ic_forbidden_cancel_svgrepo_com"
+                                                android:clickable="true"
+                                                android:foreground="?android:attr/selectableItemBackground" />
+
+                                            <EditText
+                                                android:id="@+id/numShow"
+                                                android:layout_width="80dp"
+                                                android:layout_height="50dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:background="@drawable/design_fram_edittext2"
+                                                android:gravity="center"
+                                                android:inputType="number"
+                                                android:text="1"
+                                                android:textSize="19sp" />
+
+                                            <ImageView
+                                                android:id="@+id/plusNum"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10dp"
+                                                android:background="@drawable/ic_add_svgrepo_com"
+                                                android:clickable="true"
+                                                android:foreground="?android:attr/selectableItemBackground" />
 
                                         </LinearLayout>
 
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="20dp"
+                                            android:text="หมายเหตุ"
+                                            android:textColor="@color/grey"
+                                            android:textSize="16sp" />
+
                                         <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
+                                            android:layout_marginRight="0dp">
+
+                                            <EditText
+                                                android:id="@+id/note"
+                                                android:padding="10dp"
+                                                android:inputType="text|textMultiLine"
+                                                android:maxLines="3"
+                                                android:gravity="top"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="120dp"
+                                                android:layout_marginTop="5dp"
+                                                android:background="@drawable/design_fram_edittext2"
+                                                android:paddingLeft="10dp"
+                                                android:textSize="19sp" />
+
+                                        </LinearLayout>
 
 
-                                            android:layout_width="0dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:orientation="vertical"
-                                            android:paddingLeft="20dp"
-                                            android:paddingRight="20dp"
-                                            android:paddingBottom="0dp">
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text="จำนวน"
-                                                android:textColor="@color/grey"
-                                                android:textSize="16sp" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="50dp"
+                                            android:gravity="center">
 
                                             <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="50dp"
-                                                android:layout_marginTop="10dp"
-                                                android:layout_marginRight="0dp"
-                                                android:orientation="horizontal"
-                                                android:gravity="center|start">
-
-
-                                                <ImageView
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:background="@drawable/ic_forbidden_cancel_svgrepo_com"/>
-
-                                                <EditText
-                                                    android:layout_marginLeft="10dp"
-                                                    android:gravity="center"
-                                                    android:layout_width="80dp"
-                                                    android:hint="0"
-                                                    android:layout_height="50dp"
-                                                    android:background="@drawable/design_fram_edittext2"
-                                                    android:textSize="19sp" />
-
-                                                <ImageView
-                                                    android:layout_marginLeft="10dp"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:background="@drawable/ic_add_svgrepo_com"/>
-
-                                            </LinearLayout>
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginTop="20dp"
-                                                android:text="หมายเหตุ"
-                                                android:textColor="@color/grey"
-                                                android:textSize="16sp" />
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
+                                                android:id="@+id/confirmAdd"
+                                                android:layout_width="180dp"
+                                                android:layout_height="60dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="15dp"
                                                 android:layout_marginTop="0dp"
-                                                android:layout_marginRight="0dp">
-
-                                                <EditText
-                                                    android:textAlignment="textStart"
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="100dp"
-                                                    android:layout_marginTop="5dp"
-                                                    android:background="@drawable/design_fram_edittext2"
-                                                    android:paddingLeft="10dp"
-                                                    android:textSize="19sp" />
-
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginTop="50dp"
+                                                android:layout_marginRight="15dp"
+                                                android:layout_marginBottom="0dp"
+                                                android:background="@drawable/design_fram4"
+                                                android:clickable="true"
+                                                android:elevation="2dp"
+                                                android:foreground="?android:attr/selectableItemBackground"
                                                 android:gravity="center">
 
-                                                <LinearLayout
-                                                    android:id="@+id/checkBill"
-                                                    android:layout_width="180dp"
-                                                    android:layout_height="60dp"
-                                                    android:layout_gravity="center"
-                                                    android:layout_marginLeft="15dp"
-                                                    android:layout_marginTop="0dp"
-                                                    android:layout_marginRight="15dp"
-                                                    android:layout_marginBottom="0dp"
-                                                    android:background="@drawable/design_fram4"
-                                                    android:elevation="2dp"
-                                                    android:gravity="center">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="ยืนยัน"
+                                                    android:textColor="@color/whiteDesign"
+                                                    android:textSize="18sp"
+                                                    android:textStyle="bold" />
 
-                                                    <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="สั่งอาหาร"
-                                                        android:textColor="@color/whiteDesign"
-                                                        android:textSize="18sp"
-                                                        android:textStyle="bold" />
-
-                                                </LinearLayout>
                                             </LinearLayout>
-
                                         </LinearLayout>
 
                                     </LinearLayout>
 
-
                                 </LinearLayout>
 
 
-                            </RelativeLayout>
+                            </LinearLayout>
 
 
-                        </LinearLayout>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
 
 
                 </LinearLayout>

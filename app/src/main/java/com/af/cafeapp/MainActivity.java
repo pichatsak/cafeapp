@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-    private LinearLayout checkBill;  // ปุ่มเช็คบิล
+//    private LinearLayout checkBill;  // ปุ่มเช็คบิล
   //  private ImageView ex_dialog ; //ออกไดอาร็อคชำระเงิน
     private TextView checklish;
     private ImageView ex_dialog_g_and_f ;
@@ -76,32 +76,32 @@ public class MainActivity extends AppCompatActivity {
 
 
 //ไดอาร็อคเช็คบิล
-        checkBill = findViewById(R.id.checkBill);
-
-        checkBill.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final Dialog dialog = new Dialog(MainActivity.this);
-                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                dialog.setCancelable(false);
-                dialog.setContentView(R.layout.dialog_check_money_g_and_f);
-                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-                ex_dialog_g_and_f = dialog.findViewById(R.id.ex_dialog_g_and_f);
-                dialog.show();
-                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
-                int width = display.getWidth();
-                int height=display.getHeight();
-                Log.v("width", width+"");
-                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
-
-                ex_dialog_g_and_f.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        dialog.dismiss();
-                    }
-                });
-            }
-        });
+//        checkBill = findViewById(R.id.checkBill);
+//
+//        checkBill.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                final Dialog dialog = new Dialog(MainActivity.this);
+//                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//                dialog.setCancelable(false);
+//                dialog.setContentView(R.layout.dialog_check_money_g_and_f);
+//                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+//                ex_dialog_g_and_f = dialog.findViewById(R.id.ex_dialog_g_and_f);
+//                dialog.show();
+//                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
+//                int width = display.getWidth();
+//                int height=display.getHeight();
+//                Log.v("width", width+"");
+//                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
+//
+//                ex_dialog_g_and_f.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        dialog.dismiss();
+//                    }
+//                });
+//            }
+//        });
    //ห้ามลบ
 //        checkBill.setOnClickListener(new View.OnClickListener() {
 //            @Override

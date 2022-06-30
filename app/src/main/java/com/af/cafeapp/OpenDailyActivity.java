@@ -11,17 +11,17 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.af.cafeapp.models.DailyData;
+import com.af.cafeapp.models.DailySale;
 import com.af.cafeapp.tools.DateTool;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 
 public class OpenDailyActivity extends AppCompatActivity {
     LinearLayout back, confirmOpen;
-    EditText totalChange;
+    EditText totalChange,nameUser;
     String keyMonthDataGet = "";
     private final DateTool dateTool = new DateTool();
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -33,6 +33,7 @@ public class OpenDailyActivity extends AppCompatActivity {
         back = findViewById(R.id.back);
         confirmOpen = findViewById(R.id.confirmOpen);
         totalChange = findViewById(R.id.totalChange);
+        nameUser = findViewById(R.id.nameUser);
         Bundle bundle = getIntent().getExtras();
         keyMonthDataGet = bundle.getString("keyMonthData");
         Log.d("CHK_KEY", keyMonthDataGet);
@@ -44,14 +45,17 @@ public class OpenDailyActivity extends AppCompatActivity {
 
         if (totalChange.getText().toString().isEmpty()) {
             Toast.makeText(this, "กรุณากรอกยอดเงิน", Toast.LENGTH_SHORT).show();
+        }else if (nameUser.getText().toString().isEmpty()) {
+            Toast.makeText(this, "กรุณากรอกชื่อพนักงาน", Toast.LENGTH_SHORT).show();
         } else {
-            float totalChangeGet = Float.valueOf(totalChange.getText().toString());
+            float totalChangeGet = Float.parseFloat(totalChange.getText().toString());
             Date curDate = Calendar.getInstance().getTime();
             String strDate = dateTool.getDayCur();
             DailyData dailyData = new DailyData();
             dailyData.setDateCreate(curDate);
             dailyData.setDateDaily(curDate);
             dailyData.setDateStr(strDate);
+            dailyData.setNameUser(nameUser.getText().toString());
             dailyData.setTotalDrawerStart(totalChangeGet);
             dailyData.setTotalSale(0.0F);
             dailyData.setTotalChange(0.0F);
@@ -59,14 +63,23 @@ public class OpenDailyActivity extends AppCompatActivity {
             dailyData.setTotalTakeOut(0.0F);
             dailyData.setTotalExpends(0.0F);
             dailyData.setStatus("running");
+
             db.collection("data_month").document(keyMonthDataGet)
                     .update("listData." + strDate, dailyData)
                     .addOnSuccessListener(aVoid -> {
-
-                        Intent returnIntent = new Intent();
-                        setResult(Activity.RESULT_OK, returnIntent);
-                        finish();
-
+                        final HashMap<String, Object> newList = new HashMap<>();
+                        DailySale dailySale = new DailySale();
+                        dailySale.setBillRun(1);
+                        dailySale.setDateCreate(curDate);
+                        dailySale.setDateStr(strDate);
+                        dailySale.setListBill(newList);
+                        db.collection("daily_sale")
+                                .add(dailySale)
+                                .addOnSuccessListener(documentReference -> {
+                                    Intent returnIntent = new Intent();
+                                    setResult(Activity.RESULT_OK, returnIntent);
+                                    finish();
+                                });
                     });
 
         }

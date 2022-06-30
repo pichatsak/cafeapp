@@ -25,6 +25,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.List;
+import java.util.Map;
 
 public class MenuAdaptor extends RecyclerView.Adapter<MenuAdaptor.ViewHolder> {
 
@@ -63,11 +64,9 @@ public class MenuAdaptor extends RecyclerView.Adapter<MenuAdaptor.ViewHolder> {
                     .apply(RequestOptions.bitmapTransform(new RoundedCorners(14)))
                     .into(holder.imgMenu);
         });
+        holder.menuCont.setOnClickListener(view -> mOnClicks.OnClicks(position));
 
     }
-
-
-
 
     // total number of rows
     @Override

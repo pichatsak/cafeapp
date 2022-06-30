@@ -7,6 +7,7 @@ public class DailyData {
     private Date dateDaily;
     private Date dateEnd;
     private String dateStr;
+    private String nameUser;
     private float totalDrawerStart;
     private float totalSale;
     private float totalChange;
@@ -17,6 +18,14 @@ public class DailyData {
 
     public DailyData() {
 
+    }
+
+    public String getNameUser() {
+        return nameUser;
+    }
+
+    public void setNameUser(String nameUser) {
+        this.nameUser = nameUser;
     }
 
     public Date getDateCreate() {
