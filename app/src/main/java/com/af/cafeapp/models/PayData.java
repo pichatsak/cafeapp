@@ -3,6 +3,7 @@ package com.af.cafeapp.models;
 public class PayData {
     private float totalPay;
     private String typePay;
+    private int typePayPos;
 
     public PayData() {
 
@@ -22,5 +23,13 @@ public class PayData {
 
     public void setTypePay(String typePay) {
         this.typePay = typePay;
+    }
+
+    public int getTypePayPos() {
+        return typePayPos;
+    }
+
+    public void setTypePayPos(int typePayPos) {
+        this.typePayPos = typePayPos;
     }
 }

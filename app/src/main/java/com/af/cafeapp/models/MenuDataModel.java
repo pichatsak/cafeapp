@@ -5,15 +5,14 @@ import java.util.HashMap;
 public class MenuDataModel {
     private String key;
     private String menuName;
-    private float priceNm ;
-    private float priceSp ;
-    private float priceNmGrab ;
-    private float priceSpGrab ;
-    private float priceNmFood ;
-    private float priceSpFood ;
-    private float priceNmRobin ;
-    private float priceSpRobin ;
+    private float price_food ;
+    private float price_grab ;
+    private float price_normal ;
+    private float price_robin ;
+    private String  statusTopp ;
+    private String typeMenu ;
     private HashMap<String, Object> listTopping;
+    private HashMap<String, Object> listPrice;
 
     public MenuDataModel() {
 
@@ -35,68 +34,52 @@ public class MenuDataModel {
         this.menuName = menuName;
     }
 
-    public float getPriceNm() {
-        return priceNm;
+    public float getPrice_food() {
+        return price_food;
     }
 
-    public void setPriceNm(float priceNm) {
-        this.priceNm = priceNm;
+    public void setPrice_food(float price_food) {
+        this.price_food = price_food;
     }
 
-    public float getPriceSp() {
-        return priceSp;
+    public float getPrice_grab() {
+        return price_grab;
     }
 
-    public void setPriceSp(float priceSp) {
-        this.priceSp = priceSp;
+    public void setPrice_grab(float price_grab) {
+        this.price_grab = price_grab;
     }
 
-    public float getPriceNmGrab() {
-        return priceNmGrab;
+    public float getPrice_normal() {
+        return price_normal;
     }
 
-    public void setPriceNmGrab(float priceNmGrab) {
-        this.priceNmGrab = priceNmGrab;
+    public void setPrice_normal(float price_normal) {
+        this.price_normal = price_normal;
     }
 
-    public float getPriceSpGrab() {
-        return priceSpGrab;
+    public float getPrice_robin() {
+        return price_robin;
     }
 
-    public void setPriceSpGrab(float priceSpGrab) {
-        this.priceSpGrab = priceSpGrab;
+    public void setPrice_robin(float price_robin) {
+        this.price_robin = price_robin;
     }
 
-    public float getPriceNmFood() {
-        return priceNmFood;
+    public String getStatusTopp() {
+        return statusTopp;
     }
 
-    public void setPriceNmFood(float priceNmFood) {
-        this.priceNmFood = priceNmFood;
+    public void setStatusTopp(String statusTopp) {
+        this.statusTopp = statusTopp;
     }
 
-    public float getPriceSpFood() {
-        return priceSpFood;
+    public String getTypeMenu() {
+        return typeMenu;
     }
 
-    public void setPriceSpFood(float priceSpFood) {
-        this.priceSpFood = priceSpFood;
-    }
-
-    public float getPriceNmRobin() {
-        return priceNmRobin;
-    }
-
-    public void setPriceNmRobin(float priceNmRobin) {
-        this.priceNmRobin = priceNmRobin;
-    }
-
-    public float getPriceSpRobin() {
-        return priceSpRobin;
-    }
-
-    public void setPriceSpRobin(float priceSpRobin) {
-        this.priceSpRobin = priceSpRobin;
+    public void setTypeMenu(String typeMenu) {
+        this.typeMenu = typeMenu;
     }
 
     public HashMap<String, Object> getListTopping() {
@@ -105,5 +88,13 @@ public class MenuDataModel {
 
     public void setListTopping(HashMap<String, Object> listTopping) {
         this.listTopping = listTopping;
+    }
+
+    public HashMap<String, Object> getListPrice() {
+        return listPrice;
+    }
+
+    public void setListPrice(HashMap<String, Object> listPrice) {
+        this.listPrice = listPrice;
     }
 }

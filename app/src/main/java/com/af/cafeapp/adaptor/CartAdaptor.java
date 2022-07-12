@@ -55,11 +55,15 @@ public class CartAdaptor extends RecyclerView.Adapter<CartAdaptor.ViewHolder> {
         String priceGet = String.format(Locale.ENGLISH,"%.2f", dataGet.getPrice());
         holder.priceMenuCart.setText(priceGet);
         holder.numMenuShow.setText(String.valueOf(dataGet.getNum()));
-        if(dataGet.getTypePrice()==1){
-            holder.showTypePrice.setText("ธรรมดา");
-        }else{
-            holder.showTypePrice.setText("พิเศษ");
+//        if(dataGet.getTypePrice()==1){
+//            holder.showTypePrice.setText("ธรรมดา");
+//        }else{
+//            holder.showTypePrice.setText("พิเศษ");
+//        }
+        if(dataGet.getTypeMenu().equals("many")){
+            holder.contPriceListShow.setVisibility(View.VISIBLE);
         }
+        holder.showTypePrice.setText(dataGet.getPriceNameMenu());
         if(dataGet.getNote().isEmpty()){
             holder.noteShow.setText("");
         }else{
@@ -114,7 +118,7 @@ public class CartAdaptor extends RecyclerView.Adapter<CartAdaptor.ViewHolder> {
     // stores and recycles views as they are scrolled off screen
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView nameMenuCart,priceMenuCart,numMenuShow,showTypePrice,noteShow,showTopAll;
-        LinearLayout delCart,contMain;
+        LinearLayout delCart,contMain,contPriceListShow;
         public OnClicks onClicks;
         ViewHolder(View itemView,OnClicks onClicks) {
             super(itemView);
@@ -126,6 +130,7 @@ public class CartAdaptor extends RecyclerView.Adapter<CartAdaptor.ViewHolder> {
             noteShow = itemView.findViewById(R.id.noteShow);
             delCart = itemView.findViewById(R.id.delCart);
             contMain = itemView.findViewById(R.id.contMain);
+            contPriceListShow = itemView.findViewById(R.id.contPriceListShow);
             itemView.setOnClickListener(this);
             this.onClicks = onClicks;
         }

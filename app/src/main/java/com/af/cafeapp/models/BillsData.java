@@ -10,12 +10,21 @@ public class BillsData {
     private float totalAmount;
     private float totalTopping;
     private float total;
+    private float totalPay;
     private float totalChange;
     private HashMap<String, Object> listPay;
     private String typeBill;
 
     public BillsData() {
 
+    }
+
+    public float getTotalPay() {
+        return totalPay;
+    }
+
+    public void setTotalPay(float totalPay) {
+        this.totalPay = totalPay;
     }
 
     public Date getDateCreate() {

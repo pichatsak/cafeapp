@@ -14,9 +14,36 @@ public class CartData {
     private int typePrice;
     private Map<String, Object> topping;
     private Date dateCreate;
+    private String typeMenu;
+    private String priceNameMenu;
+    private String keyPrice;
+
+    public String getKeyPrice() {
+        return keyPrice;
+    }
+
+    public void setKeyPrice(String keyPrice) {
+        this.keyPrice = keyPrice;
+    }
 
     public CartData() {
 
+    }
+
+    public String getTypeMenu() {
+        return typeMenu;
+    }
+
+    public void setTypeMenu(String typeMenu) {
+        this.typeMenu = typeMenu;
+    }
+
+    public String getPriceNameMenu() {
+        return priceNameMenu;
+    }
+
+    public void setPriceNameMenu(String priceNameMenu) {
+        this.priceNameMenu = priceNameMenu;
     }
 
     public String getKeyMenu() {

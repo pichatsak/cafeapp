@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/check_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical">
 
     <LinearLayout
@@ -109,29 +111,34 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/choose_cash"
                                     android:layout_width="120dp"
                                     android:layout_height="50dp"
                                     android:layout_gravity="end"
                                     android:layout_marginTop="40dp"
+                                    android:background="@drawable/check_fram_bar3"
+                                    android:clickable="true"
                                     android:elevation="2dp"
+                                    android:foreground="?android:attr/selectableItemBackground"
                                     android:gravity="center"
                                     android:text="เงินสด"
-                                    android:background="@drawable/check_fram_bar3"
                                     android:textColor="@color/textnonbode"
                                     android:textSize="18sp"
 
                                     />
 
                                 <TextView
+                                    android:id="@+id/choose_own"
                                     android:layout_width="120dp"
                                     android:layout_height="50dp"
                                     android:layout_gravity="end"
                                     android:layout_marginTop="25dp"
                                     android:background="@null"
+                                    android:clickable="true"
                                     android:elevation="2dp"
+                                    android:foreground="?android:attr/selectableItemBackground"
                                     android:gravity="center"
                                     android:text="เงินโอน"
-
                                     android:textColor="@color/QDropMain"
                                     android:textSize="18sp"
 
@@ -218,14 +225,14 @@
                                             android:layout_width="0dp"
                                             android:layout_height="match_parent"
                                             android:layout_gravity="center"
-
                                             android:layout_weight="2.1"
-
-
                                             android:gravity="end">
 
 
-                                            <EditText
+                                            <TextView
+                                                android:id="@+id/tvPrice"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
                                                 android:layout_marginLeft="5dp"
@@ -233,18 +240,13 @@
                                                 android:layout_marginRight="5dp"
                                                 android:layout_marginBottom="5dp"
                                                 android:background="@drawable/check_callculate"
-
                                                 android:elevation="2dp"
                                                 android:hint="จำนวนเงิน"
                                                 android:paddingLeft="15dp"
                                                 android:paddingRight="25dp"
-                                                android:textAlignment="center"
                                                 android:textColor="@color/textnonbode"
                                                 android:textSize="18sp"
-
                                                 />
-
-
                                         </LinearLayout>
 
 
@@ -295,6 +297,9 @@
 
 
                                                 <LinearLayout
+                                                    android:id="@+id/btn_full"
+                                                    android:clickable="true"
+                                                    android:foreground="?android:attr/selectableItemBackground"
                                                     android:layout_width="0dp"
                                                     android:layout_height="match_parent"
                                                     android:layout_gravity="center"
@@ -317,13 +322,16 @@
                                                 </LinearLayout>
 
                                                 <LinearLayout
+                                                    android:id="@+id/clear"
+                                                    android:clickable="true"
+                                                    android:foreground="?android:attr/selectableItemBackground"
                                                     android:layout_width="0dp"
                                                     android:layout_height="match_parent"
                                                     android:layout_gravity="center"
                                                     android:layout_marginLeft="8dp"
                                                     android:layout_marginTop="5dp"
                                                     android:layout_marginBottom="4dp"
-                                                    android:layout_weight="1"
+                                                    android:layout_weight="2"
                                                     android:background="@drawable/check_callculate"
                                                     android:elevation="2dp"
                                                     android:gravity="center">
@@ -336,28 +344,6 @@
                                                         android:textSize="18sp" />
 
                                                 </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_marginLeft="8dp"
-                                                    android:layout_marginTop="5dp"
-                                                    android:layout_marginRight="5dp"
-                                                    android:layout_marginBottom="4dp"
-                                                    android:layout_weight="1"
-                                                    android:background="@drawable/check_callculate"
-                                                    android:elevation="2dp"
-                                                    android:gravity="center">
-
-                                                    <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="X"
-                                                        android:textColor="@color/textgrey"
-                                                        android:textSize="18sp" />
-                                                </LinearLayout>
-
 
                                             </LinearLayout>
 
@@ -424,8 +410,13 @@
                                                     android:gravity="center">
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad7"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="7"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -445,8 +436,13 @@
                                                     android:gravity="center">
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad8"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="8"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -467,8 +463,13 @@
                                                     android:gravity="center">
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad9"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="9"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -541,8 +542,13 @@
                                                     android:gravity="center">
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad4"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="4"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -561,8 +567,13 @@
                                                     android:gravity="center">
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad5"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="5"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -583,8 +594,13 @@
                                                     android:gravity="center">
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad6"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="6"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -654,8 +670,13 @@
                                                     android:gravity="center">
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad1"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="1"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -675,8 +696,13 @@
                                                     android:gravity="center">
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad2"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="2"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -697,8 +723,13 @@
                                                     android:gravity="center">
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad3"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="3"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -772,8 +803,13 @@
 
 
                                                     <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/pad0"
+                                                        android:clickable="true"
+                                                        android:foreground="?android:attr/selectableItemBackground"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:layout_height="match_parent"
                                                         android:text="0"
                                                         android:textColor="@color/textgrey"
                                                         android:textSize="18sp" />
@@ -781,6 +817,9 @@
                                                 </LinearLayout>
 
                                                 <LinearLayout
+                                                    android:id="@+id/conPad"
+                                                    android:clickable="true"
+                                                    android:foreground="?android:attr/selectableItemBackground"
                                                     android:layout_width="0dp"
                                                     android:layout_height="match_parent"
                                                     android:layout_gravity="center"
@@ -1454,7 +1493,6 @@
 
                         <ImageView
                             android:id="@+id/ex_dialog"
-                            android:padding="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
@@ -1462,8 +1500,9 @@
                             android:layout_marginRight="10dp"
                             android:layout_marginBottom="5dp"
                             android:background="@drawable/exit_b"
-                            android:src="@drawable/ic_baseline_clear_24"
-                            android:elevation="2dp" />
+                            android:elevation="2dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_clear_24" />
 
 
                         <!--                        เทส-->
@@ -1514,381 +1553,11 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="8.6"
                                 android:orientation="vertical">
-
-                                <ScrollView
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/viewPay"
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginTop="0dp"
-                                    android:scrollbars="none">
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="50dp"
-                                            android:layout_marginLeft="20dp"
-                                            android:layout_marginTop="5dp"
-                                            android:layout_marginRight="20dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:background="@drawable/design_fram_card"
-                                            android:elevation="2dp">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:orientation="horizontal"
-                                                android:weightSum="3">
-
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="1"
-                                                    android:orientation="vertical">
-
-
-                                                    <LinearLayout
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="match_parent"
-
-                                                        android:gravity="center"
-
-                                                        >
-
-
-                                                        <TextView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            android:layout_gravity="center"
-
-                                                            android:text="เงินสด"
-                                                            android:textColor="@color/textnonbode"
-                                                            android:textSize="18sp" />
-
-
-                                                    </LinearLayout>
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="1.5"
-                                                    android:gravity="center"
-                                                    android:orientation="horizontal">
-
-
-                                                    <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="120.00"
-                                                        android:textColor="@color/textnonbode"
-                                                        android:textSize="18sp"
-
-
-                                                        />
-
-
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="0.5"
-                                                    android:gravity="center">
-
-                                                    <ImageView
-                                                        android:layout_width="20dp"
-                                                        android:layout_height="20dp"
-                                                        android:background="@drawable/trash"
-                                                        android:backgroundTint="@color/textgrey" />
-
-                                                </LinearLayout>
-
-                                            </LinearLayout>
-                                        </LinearLayout>
-                                        <!--                        อันแรก-->
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="50dp"
-                                            android:layout_marginLeft="20dp"
-                                            android:layout_marginTop="5dp"
-                                            android:layout_marginRight="20dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:background="@drawable/design_fram_card"
-                                            android:elevation="2dp">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:orientation="horizontal"
-                                                android:weightSum="3">
-
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="1"
-                                                    android:orientation="vertical">
-
-
-                                                    <LinearLayout
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="match_parent"
-
-                                                        android:gravity="center"
-
-                                                        >
-
-
-                                                        <TextView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            android:layout_gravity="center"
-
-                                                            android:text="เงินโอน"
-                                                            android:textColor="@color/textnonbode"
-                                                            android:textSize="18sp" />
-
-
-                                                    </LinearLayout>
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="1.5"
-                                                    android:gravity="center"
-                                                    android:orientation="horizontal">
-
-
-                                                    <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="100.00"
-                                                        android:textColor="@color/textnonbode"
-                                                        android:textSize="18sp"
-
-
-                                                        />
-
-
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="0.5"
-                                                    android:gravity="center">
-
-                                                    <ImageView
-                                                        android:layout_width="20dp"
-                                                        android:layout_height="20dp"
-                                                        android:background="@drawable/trash"
-                                                        android:backgroundTint="@color/textred" />
-
-                                                </LinearLayout>
-
-                                            </LinearLayout>
-                                        </LinearLayout>
-
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="50dp"
-                                            android:layout_marginLeft="20dp"
-                                            android:layout_marginTop="5dp"
-                                            android:layout_marginRight="20dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:background="@drawable/design_fram_card"
-                                            android:elevation="2dp">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:orientation="horizontal"
-                                                android:weightSum="3">
-
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="1"
-                                                    android:orientation="vertical">
-
-
-                                                    <LinearLayout
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="match_parent"
-
-                                                        android:gravity="center"
-
-                                                        >
-
-
-                                                        <TextView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            android:layout_gravity="center"
-
-                                                            android:text="เงินสด"
-                                                            android:textColor="@color/textnonbode"
-                                                            android:textSize="18sp" />
-
-
-                                                    </LinearLayout>
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="1.5"
-                                                    android:gravity="center"
-                                                    android:orientation="horizontal">
-
-
-                                                    <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="120.00"
-                                                        android:textColor="@color/textnonbode"
-                                                        android:textSize="18sp"
-
-
-                                                        />
-
-
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="0.5"
-                                                    android:gravity="center">
-
-                                                    <ImageView
-                                                        android:layout_width="20dp"
-                                                        android:layout_height="20dp"
-                                                        android:background="@drawable/trash"
-                                                        android:backgroundTint="@color/textgrey" />
-
-                                                </LinearLayout>
-
-                                            </LinearLayout>
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="50dp"
-                                            android:layout_marginLeft="20dp"
-                                            android:layout_marginTop="5dp"
-                                            android:layout_marginRight="20dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:background="@drawable/design_fram_card"
-                                            android:elevation="2dp">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:orientation="horizontal"
-                                                android:weightSum="3">
-
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="1"
-                                                    android:orientation="vertical">
-
-
-                                                    <LinearLayout
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="match_parent"
-
-                                                        android:gravity="center"
-
-                                                        >
-
-
-                                                        <TextView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            android:layout_gravity="center"
-
-                                                            android:text="เงินสด"
-                                                            android:textColor="@color/textnonbode"
-                                                            android:textSize="18sp" />
-
-
-                                                    </LinearLayout>
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="1.5"
-                                                    android:gravity="center"
-                                                    android:orientation="horizontal">
-
-
-                                                    <TextView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="120.00"
-                                                        android:textColor="@color/textnonbode"
-                                                        android:textSize="18sp"
-
-
-                                                        />
-
-
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="0dp"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_gravity="center"
-                                                    android:layout_weight="0.5"
-                                                    android:gravity="center">
-
-                                                    <ImageView
-                                                        android:layout_width="20dp"
-                                                        android:layout_height="20dp"
-                                                        android:background="@drawable/trash"
-                                                        android:backgroundTint="@color/textgrey" />
-
-                                                </LinearLayout>
-
-                                            </LinearLayout>
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="300dp">
-
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-                                    <!--                        อันสาม-->
-                                </ScrollView>
-
+                                    android:layout_height="match_parent"/>
                             </LinearLayout>
-
-
                         </LinearLayout>
 
 
@@ -1974,7 +1643,7 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginTop="0dp"
-
+                                                android:id="@+id/tvTotalNeed"
                                                 android:layout_marginRight="20dp"
                                                 android:text="220.00"
                                                 android:textColor="@color/textnonbode"
@@ -2026,7 +1695,7 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginTop="3dp"
-
+                                                android:id="@+id/tvPayed"
                                                 android:layout_marginRight="20dp"
                                                 android:text="220.00"
                                                 android:textColor="@color/textnonbode"
@@ -2037,7 +1706,9 @@
 
 
                                     <LinearLayout
-                                        android:id="@+id/checkBill"
+                                        android:id="@+id/confPay"
+                                        android:clickable="true"
+                                        android:foreground="?android:attr/selectableItemBackground"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_gravity="center"
