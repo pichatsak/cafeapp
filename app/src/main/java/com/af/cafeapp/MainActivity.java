@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.af.cafeapp.RealmDB.PrintSetRm;
 import com.af.cafeapp.ui.Tool.CloseBar;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -26,6 +27,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.af.cafeapp.databinding.ActivityMainBinding;
+
+import java.util.UUID;
+
+import io.realm.Realm;
+import io.realm.RealmResults;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView ex_dialog_add_topping;
     private LinearLayout menu1;
     private ImageView ex_dialog_click_menu;
-
+    Realm realm = Realm.getDefaultInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.nav_drawer_cash)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -73,61 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-//ไดอาร็อคเช็คบิล
-//        checkBill = findViewById(R.id.checkBill);
-//
-//        checkBill.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                final Dialog dialog = new Dialog(MainActivity.this);
-//                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//                dialog.setCancelable(false);
-//                dialog.setContentView(R.layout.dialog_check_money_g_and_f);
-//                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-//                ex_dialog_g_and_f = dialog.findViewById(R.id.ex_dialog_g_and_f);
-//                dialog.show();
-//                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
-//                int width = display.getWidth();
-//                int height=display.getHeight();
-//                Log.v("width", width+"");
-//                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
-//
-//                ex_dialog_g_and_f.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        dialog.dismiss();
-//                    }
-//                });
-//            }
-//        });
-   //ห้ามลบ
-//        checkBill.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                final Dialog dialog = new Dialog(MainActivity.this);
-//                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//                dialog.setCancelable(false);
-//                dialog.setContentView(R.layout.dialog_check_money);
-//                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-//                    ex_dialog = dialog.findViewById(R.id.ex_dialog);
-//                dialog.show();
-//                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
-//                int width = display.getWidth();
-//                int height=display.getHeight();
-//                Log.v("width", width+"");
-//                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
-//
-//                ex_dialog.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        dialog.dismiss();
-//                    }
-//                });
-//            }
-//        });
-
-//ไดอาร็อคเช็ครายการที่สั่ง
         checklish = findViewById(R.id.checklish);
         checklish.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,93 +103,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-//        add_menu_home = findViewById(R.id.add_menu_home);
-
-//        add_menu_home.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                final Dialog dialog = new Dialog(MainActivity.this);
-//                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//                dialog.setCancelable(false);
-//                dialog.setContentView(R.layout.dialog_add_menu_home);
-//                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-//                ex_dialog_addmenu_home = dialog.findViewById(R.id.ex_dialog_addmenu_home);
-//                dialog.show();
-//                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
-//                int width = display.getWidth();
-//                int height=display.getHeight();
-//                Log.v("width", width+"");
-//                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
-//
-//                ex_dialog_addmenu_home.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        dialog.dismiss();
-//                    }
-//                });
-//
-//                add_topping = dialog.findViewById(R.id.add_topping);
-//                add_topping.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//
-//                        final Dialog dialog = new Dialog(MainActivity.this);
-//                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//                        dialog.setCancelable(false);
-//                        dialog.setContentView(R.layout.dialog_add_topping);
-//                        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-//                        ex_dialog_add_topping = dialog.findViewById(R.id.ex_dialog_add_topping);
-//                        dialog.show();
-//                        Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
-//                        int width = display.getWidth();
-//                        int height=display.getHeight();
-//                        Log.v("width", width+"");
-//                        dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
-//
-//                        ex_dialog_add_topping.setOnClickListener(new View.OnClickListener() {
-//                            @Override
-//                            public void onClick(View view) {
-//                                dialog.dismiss();
-//                            }
-//                        });
-//
-//
-//                    }
-//                });
-//
-//            }
-//        });
+        checkPrintSet();
+    }
 
 
-//        menu1 = findViewById(R.id.menu1);
-//        menu1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                final Dialog dialog = new Dialog(MainActivity.this);
-//                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//                dialog.setCancelable(false);
-//                dialog.setContentView(R.layout.dialog_click_menu);
-//                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-//                ex_dialog_click_menu = dialog.findViewById(R.id.ex_dialog_click_menu);
-//                dialog.show();
-//                Display display =((WindowManager)getSystemService(MainActivity.this.WINDOW_SERVICE)).getDefaultDisplay();
-//                int width = display.getWidth();
-//                int height=display.getHeight();
-//                Log.v("width", width+"");
-//                dialog.getWindow().setLayout((6*width)/7,(4*height)/5);
-//
-//                ex_dialog_click_menu.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        dialog.dismiss();
-//                    }
-//                });
-//            }
-//        });
-
-
-
+    public void checkPrintSet(){
+        RealmResults<PrintSetRm> printSetRms = realm.where(PrintSetRm.class).findAll();
+        if(printSetRms.isEmpty()){
+            realm.beginTransaction();
+            PrintSetRm printSetRm = realm.createObject(PrintSetRm.class, UUID.randomUUID().toString());
+            printSetRm.setSizePaper(58f);
+            printSetRm.setPerLine(48);
+            printSetRm.setDpiPrinter(203);
+            realm.commitTransaction();
+        }
     }
 
     @Override

@@ -99,9 +99,6 @@ public class GalleryFragment extends Fragment {
                     @Override
                     public void onClick(View view) {
 
-
-
-
                         if (name_stock.getText().toString().isEmpty()) {
                             Toast.makeText(getContext(), "กรุณากรอกชื่อสต็อก", Toast.LENGTH_SHORT).show();
                         } else if (numaddstock.getText().toString().isEmpty()) {
@@ -112,7 +109,11 @@ public class GalleryFragment extends Fragment {
                         }  else {
                             data_add_stock();
                             dialog.dismiss();
+
+                            
+
                             Toast.makeText(getContext(), "เพิ่มรายการสำเร็จ", Toast.LENGTH_SHORT).show();
+
                         }
 
                     }
@@ -174,8 +175,6 @@ public class GalleryFragment extends Fragment {
         String Getname_stock = name_stock.getText().toString();
         String Getnumaddstock = numaddstock.getText().toString();
         String Getunit_add_stock = unit_add_stock.getText().toString();
-
-
 
         data_add_list_stock data = new data_add_list_stock();
         data.setAdd_name_stock(Getname_stock);

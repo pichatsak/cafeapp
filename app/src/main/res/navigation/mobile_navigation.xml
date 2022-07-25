@@ -22,4 +22,11 @@
         android:name="com.af.cafeapp.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+
+    <fragment
+        android:id="@+id/nav_drawer_cash"
+        android:name="com.af.cafeapp.ui.drawer_cash.DrawerCashFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_drawer_cash" />
 </navigation>

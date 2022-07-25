@@ -119,16 +119,16 @@
 
                                         <LinearLayout
                                             android:id="@+id/choosePic"
-                                            android:foreground="?android:attr/selectableItemBackground"
-                                            android:clickable="true"
                                             android:layout_width="130dp"
                                             android:layout_height="130dp"
                                             android:layout_marginLeft="10dp"
                                             android:layout_marginTop="5dp"
-                                            android:padding="10dp"
                                             android:background="@drawable/b_picture_upload"
+                                            android:clickable="true"
                                             android:elevation="6dp"
+                                            android:foreground="?android:attr/selectableItemBackground"
                                             android:gravity="center"
+                                            android:padding="10dp"
 
                                             >
 
@@ -200,12 +200,12 @@
 
                                                     <EditText
                                                         android:id="@+id/menuName"
-                                                        android:singleLine="true"
                                                         android:layout_width="match_parent"
                                                         android:layout_height="50dp"
                                                         android:layout_marginTop="5dp"
                                                         android:background="@drawable/design_fram_edittext2"
                                                         android:paddingLeft="10dp"
+                                                        android:singleLine="true"
                                                         android:textSize="19sp" />
                                                 </LinearLayout>
 
@@ -426,11 +426,11 @@
 
                                                             <EditText
                                                                 android:id="@+id/priceMenu1"
-                                                                android:inputType="number"
                                                                 android:layout_width="match_parent"
                                                                 android:layout_height="50dp"
                                                                 android:layout_marginTop="5dp"
                                                                 android:background="@drawable/design_fram_edittext2"
+                                                                android:inputType="number"
                                                                 android:paddingLeft="10dp"
                                                                 android:textSize="19sp" />
                                                         </LinearLayout>
@@ -451,11 +451,11 @@
 
                                                             <EditText
                                                                 android:id="@+id/priceMenu2"
-                                                                android:inputType="number"
                                                                 android:layout_width="match_parent"
                                                                 android:layout_height="50dp"
                                                                 android:layout_marginTop="5dp"
                                                                 android:background="@drawable/design_fram_edittext2"
+                                                                android:inputType="number"
                                                                 android:paddingLeft="10dp"
                                                                 android:textSize="19sp" />
                                                         </LinearLayout>
@@ -468,9 +468,7 @@
                                                             android:gravity="center">
 
                                                             <LinearLayout
-                                                                android:clickable="true"
                                                                 android:id="@+id/save"
-                                                                android:foreground="?android:attr/selectableItemBackground"
                                                                 android:layout_width="180dp"
                                                                 android:layout_height="60dp"
                                                                 android:layout_gravity="center"
@@ -479,7 +477,9 @@
                                                                 android:layout_marginRight="15dp"
                                                                 android:layout_marginBottom="0dp"
                                                                 android:background="@drawable/design_fram4"
+                                                                android:clickable="true"
                                                                 android:elevation="2dp"
+                                                                android:foreground="?android:attr/selectableItemBackground"
                                                                 android:gravity="center">
 
                                                                 <TextView
@@ -580,6 +580,7 @@
                                                             android:layout_height="match_parent"
                                                             android:layout_marginTop="5dp"
                                                             android:orientation="vertical">
+
                                                             <androidx.recyclerview.widget.RecyclerView
                                                                 android:id="@+id/viewTopping"
                                                                 android:layout_width="match_parent"

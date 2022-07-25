@@ -120,6 +120,14 @@ public class DateTool {
         return dateFormat.format(date);
     }
 
+    public String getMonthAndYearCur(){
+        DateFormat dateFormat = new SimpleDateFormat("MM-YYYY");
+        TimeZone thais= TimeZone.getTimeZone("Asia/Bangkok");
+        dateFormat.setTimeZone(thais);
+        Date date = new Date();
+        return dateFormat.format(date);
+    }
+
     public String getDateCurTmNew(){
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/YYYY HH:mm:ss");
         TimeZone thais= TimeZone.getTimeZone("Asia/Bangkok");

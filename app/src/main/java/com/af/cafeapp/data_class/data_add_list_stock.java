@@ -1,10 +1,21 @@
 package com.af.cafeapp.data_class;
 
+import java.util.Date;
+
 public class data_add_list_stock {
     private String add_name_stock;
     private int add_num_stock;
     private String add_unit_stock;
     private String id;
+    private Date dateCreate;
+
+    public Date getDateCreate() {
+        return dateCreate;
+    }
+
+    public void setDateCreate(Date dateCreate) {
+        this.dateCreate = dateCreate;
+    }
 
     public int getAdd_num_stock() {
         return add_num_stock;

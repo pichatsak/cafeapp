@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <!--1-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.55">
+
+                </LinearLayout>
+
+                <!--  2      -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="4.9"
+                    android:background="@drawable/b_dialog_g_f"
+                    android:elevation="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/ex_dialog_addstock"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/exit_b"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_baseline_clear_24" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="40dp">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="เพิ่มรายการ"
+                                                android:textColor="@color/main1"
+                                                android:textSize="20sp"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="ยอดเงิน"
+                                                android:textColor="@color/grey"
+                                                android:textSize="16sp" />
+
+                                            <EditText
+                                                android:id="@+id/total"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp"
+                                                android:layout_marginTop="5dp"
+                                                android:background="@drawable/design_fram_edittext2"
+                                                android:inputType="number"
+                                                android:paddingLeft="10dp"
+                                                android:textSize="19sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="หมายเหตุ"
+                                                android:textColor="@color/grey"
+                                                android:textSize="16sp" />
+
+                                            <EditText
+                                                android:id="@+id/note"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp"
+                                                android:layout_marginTop="5dp"
+                                                android:background="@drawable/design_fram_edittext2"
+                                                android:inputType="text"
+                                                android:paddingLeft="10dp"
+                                                android:textSize="19sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="20dp"
+                                            android:orientation="vertical">
+
+                                            <RadioGroup
+                                                android:id="@+id/typeData"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:gravity="center_vertical">
+
+                                                <RadioButton
+                                                    android:checked="true"
+                                                    android:id="@+id/inDraw"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="นำเข้า" />
+
+                                                <RadioButton
+                                                    android:id="@+id/outDraw"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="นำออก" />
+
+                                            </RadioGroup>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="30dp"
+                                            android:gravity="center">
+
+                                            <LinearLayout
+                                                android:id="@+id/add_his"
+                                                android:layout_width="200dp"
+                                                android:layout_height="60dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="15dp"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_marginRight="15dp"
+                                                android:layout_marginBottom="0dp"
+                                                android:background="@drawable/design_fram4"
+                                                android:elevation="2dp"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="บันทึก"
+                                                    android:textColor="@color/whiteDesign"
+                                                    android:textSize="18sp"
+                                                    android:textStyle="bold" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp">
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </ScrollView>
+                </LinearLayout>
+                <!--        3-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.55">
+
+                </LinearLayout>
+                <!--หมด3-->
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

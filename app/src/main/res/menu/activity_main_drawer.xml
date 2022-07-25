@@ -8,22 +8,25 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home_24"
             android:title="หน้าหลัก" />
-<!--        <item-->
-<!--            android:id="@+id/nav_gallery"-->
-<!--            android:icon="@drawable/report"-->
-<!--            android:title="สรุปยอดรายวัน"-->
-<!--            />-->
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_baseline_timeline_24"
-            android:title="บันทึกค่าใช้จ่ายร้าน" />
+
+
 
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_stock_out_svgrepo_com"
-            android:title="สต็อกสินค้า" />
+            android:id="@+id/nav_drawer_cash"
+            android:icon="@drawable/ic_empty_drawer_svgrepo_com"
+            android:title="ลื้นชักเก็บเงิน" />
+
         <item
+            android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_baseline_settings_24"
-            android:title="ตั้งค่า" />
+            android:title="ตั้งค่าการพิมพ์" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_gallery"-->
+<!--            android:icon="@drawable/ic_stock_out_svgrepo_com"-->
+<!--            android:title="สต็อกสินค้า" />-->
+<!--        <item-->
+<!--            android:icon="@drawable/ic_baseline_settings_24"-->
+<!--            android:title="ตั้งค่า" />-->
     </group>
 </menu>

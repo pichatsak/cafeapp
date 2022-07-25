@@ -1,10 +1,16 @@
 package com.af.cafeapp.ui.home;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -23,35 +29,50 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.af.cafeapp.CloseSaleActivity;
+import com.af.cafeapp.MyApplication;
 import com.af.cafeapp.OpenDailyActivity;
 import com.af.cafeapp.R;
+import com.af.cafeapp.RealmDB.PrintSetRm;
 import com.af.cafeapp.SaveMenuActivity;
 import com.af.cafeapp.adaptor.CartAdaptor;
 import com.af.cafeapp.adaptor.ListPriceAdaptor;
 import com.af.cafeapp.adaptor.MenuAdaptor;
 import com.af.cafeapp.adaptor.ToppingChooseAdaptor;
+import com.af.cafeapp.async.AsyncBluetoothEscPosPrint;
+import com.af.cafeapp.async.AsyncEscPosPrint;
+import com.af.cafeapp.async.AsyncEscPosPrinter;
 import com.af.cafeapp.databinding.FragmentHomeBinding;
 import com.af.cafeapp.models.BillsData;
 import com.af.cafeapp.models.CartData;
+import com.af.cafeapp.models.DrawerCashData;
 import com.af.cafeapp.models.ListPriceModel;
 import com.af.cafeapp.models.MenuDataModel;
 import com.af.cafeapp.models.MonthData;
 import com.af.cafeapp.models.PayData;
+import com.af.cafeapp.models.StockHisData;
 import com.af.cafeapp.models.ToppingChooseModel;
 import com.af.cafeapp.tools.DateTool;
 import com.af.cafeapp.widget.DialogPay;
 import com.af.cafeapp.widget.DialogPayDeli;
+import com.dantsu.escposprinter.connection.DeviceConnection;
+import com.dantsu.escposprinter.connection.bluetooth.BluetoothConnection;
+import com.dantsu.escposprinter.connection.bluetooth.BluetoothPrintersConnections;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -66,6 +87,9 @@ import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
+import io.realm.Realm;
+import io.realm.RealmResults;
+
 @SuppressWarnings({"FieldCanBeLocal", "ConstantConditions", "unused", "unchecked"})
 public class HomeFragment extends Fragment {
 
@@ -77,6 +101,7 @@ public class HomeFragment extends Fragment {
     private String keyMonthData = "";
     final static int LAUNCH_OPEN_SALE = 1;
     final static int LAUNCH_SAVE_MENU = 2;
+    final static int LAUNCH_CLOSE_SALE = 3;
     LinearLayout add_menu_home, openSale, closeSale, checkBill, openBill;
     RecyclerView viewMenu, viewCart;
     TextView chooseTypeBill;
@@ -94,6 +119,20 @@ public class HomeFragment extends Fragment {
     ArrayList<PayData> payDataArrayList = new ArrayList<>();
     DialogPay dialogPay;
     DialogPayDeli dialogPayDeli;
+    boolean isSaleEnd = false;
+
+    public static final int PERMISSION_BLUETOOTH = 101;
+    public static final int PERMISSION_BLUETOOTH_ADMIN = 102;
+    public static final int PERMISSION_BLUETOOTH_CONNECT = 103;
+    public static final int PERMISSION_BLUETOOTH_SCAN = 104;
+
+
+    private BluetoothConnection selectedDevice;
+    Realm realm = Realm.getDefaultInstance();
+
+    BillsData billCurPrint;
+    ArrayList<CartData> cartDataArrayListPrint = new ArrayList<>();
+    ArrayList<PayData> payDataArrayListPrint = new ArrayList<>();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -128,12 +167,18 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
+    private void setEndSale() {
+        openSale.setVisibility(View.GONE);
+        closeSale.setVisibility(View.GONE);
+
+        showNumBill.setText("ปิดรอบการขายแล้ว");
+        getShowMenu();
+    }
+
     private void setBtnCloseSale() {
-        closeSale.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Intent intent = new
-            }
+        closeSale.setOnClickListener(view -> {
+            Intent intent = new Intent(getContext(), CloseSaleActivity.class);
+            startActivityForResult(intent,LAUNCH_CLOSE_SALE);
         });
     }
 
@@ -222,6 +267,7 @@ public class HomeFragment extends Fragment {
             mapAddMenu.put(uidAdd, cartDataAdd);
         }
         billsData.setListMenu(mapAddMenu);
+        cartDataArrayListPrint = cartDataArrayList;
 
         HashMap<String, Object> mapAddPay = new HashMap<>();
         float totalPayIn = 0;
@@ -230,11 +276,13 @@ public class HomeFragment extends Fragment {
             mapAddPay.put(uidAdd, payDataAdd);
             totalPayIn += payDataAdd.getTotalPay();
         }
+
         billsData.setTotalPay(totalPayIn);
         float totalChangeIn = totalPayIn - totalBill;
         billsData.setTotalChange(totalChangeIn);
         billsData.setListPay(mapAddPay);
         billsData.setTypeBill(String.valueOf(typeBill));
+        billCurPrint = billsData;
         db.collection("daily_sale").document(keyDailySale)
                 .update("listBill." + billNo, billsData, "billRun", billNo + 1)
                 .addOnSuccessListener(aVoid -> {
@@ -243,6 +291,48 @@ public class HomeFragment extends Fragment {
                     isOpenBill = false;
                     setShowBtn();
                 });
+    }
+
+    /**
+     * Asynchronous printing
+     */
+    @SuppressLint("SimpleDateFormat")
+    public AsyncEscPosPrinter getAsyncEscPosPrinter(DeviceConnection printerConnection) {
+        RealmResults<PrintSetRm> printSetRms = realm.where(PrintSetRm.class).findAll();
+        SimpleDateFormat format = new SimpleDateFormat("'on' yyyy-MM-dd 'at' HH:mm:ss");
+        DecimalFormat dfStr = new DecimalFormat("#,###.00");
+        AsyncEscPosPrinter printer = new AsyncEscPosPrinter(printerConnection, printSetRms.get(0).getDpiPrinter(), printSetRms.get(0).getSizePaper(), printSetRms.get(0).getPerLine());
+        String txtPrint = "[L]\n";
+        txtPrint += "[C]<u><font size='big'>บืลที่ "+billCurPrint.getNoBill()+"</font></u>\n" +
+                "[L]\n"+
+                "[C]<u type='double'>" + format.format(new Date()) + "</u>\n" +
+                "[C]\n" +
+                "[C]================================\n"+
+                "[L]\n";
+        for (CartData cartData : cartDataArrayListPrint) {
+            String prices = dfStr.format(cartData.getPrice()*cartData.getNum());
+            txtPrint += "[L]<b>"+cartData.getNameMenu()+" @"+cartData.getNum()+"</b>[R]฿"+prices+"\n"+
+                        "[L]\n";
+        }
+        String totalStr = dfStr.format(billCurPrint.getTotal());
+        txtPrint += "[L]\n" +
+                    "[C]--------------------------------\n" +
+                    "[R]TOTAL PRICE :[R]฿"+totalStr+"\n"+
+                    "[L]\n" +
+                    "[C]--------------------------------\n"+
+                    "[L]\n";
+        txtPrint += "[R]<b>การชำระเงิน</b>\n";
+        for (PayData payData : payDataArrayListPrint) {
+            String payTt = dfStr.format(payData.getTotalPay());
+            txtPrint += "[R]"+payData.getTypePay()+" : "+payTt+"\n";
+        }
+        String ttcStr = dfStr.format(billCurPrint.getTotalChange());
+        txtPrint += "[R]เงินทอน : "+ttcStr+"\n"+"[L]\n" +
+                "[C]================================\n" +
+                "[L]\n"+
+                "[L]\n"+
+                "[C]<u><font size='big'>ร้าน...</font></u>\n";
+        return printer.addTextToPrint(txtPrint);
     }
 
     private void openDialogSuccess(BillsData billsDataOld) {
@@ -257,6 +347,7 @@ public class HomeFragment extends Fragment {
         TextView tvTotalSc = dialog.findViewById(R.id.tvTotalSc);
         TextView tvTotalPay = dialog.findViewById(R.id.tvTotalPay);
         TextView tvTotalChange = dialog.findViewById(R.id.tvTotalChange);
+        LinearLayout printBill = dialog.findViewById(R.id.printBill);
 
         tvTotalSc.setText(String.format(Locale.ENGLISH, "%.2f", billsDataOld.getTotal()));
         tvTotalPay.setText(String.format(Locale.ENGLISH, "%.2f", billsDataOld.getTotalPay()));
@@ -266,7 +357,145 @@ public class HomeFragment extends Fragment {
 
         ex_dialog_g_and_f.setOnClickListener(view1 -> dialog.dismiss());
 
+        printBill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setPrints();
+            }
+        });
+
         setNewBill();
+    }
+
+    private void setPrints() {
+        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.BLUETOOTH) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.BLUETOOTH}, PERMISSION_BLUETOOTH);
+        } else if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.BLUETOOTH_ADMIN) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.BLUETOOTH_ADMIN}, PERMISSION_BLUETOOTH_ADMIN);
+        } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S && ContextCompat.checkSelfPermission(getContext(), Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.BLUETOOTH_CONNECT}, PERMISSION_BLUETOOTH_CONNECT);
+        } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S && ContextCompat.checkSelfPermission(getContext(), Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.BLUETOOTH_SCAN}, PERMISSION_BLUETOOTH_SCAN);
+        } else {
+            BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+            if (mBluetoothAdapter == null) {
+                Toast.makeText(getContext(), "เครื่องนี้ไม่รองรับระบบ Bluetooth", Toast.LENGTH_SHORT).show();
+            } else {
+                if (!mBluetoothAdapter.isEnabled()) {
+                    Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                    startActivityForResult(enableBtIntent, 11);
+                } else {
+                    Log.d("CHKBL", "on");
+                    if(selectedDevice!=null){
+                        browseBluetoothDevice();
+                    }else{
+                        setPrintCur();
+                    }
+                }
+            }
+        }
+    }
+
+    private void setPrintCur() {
+        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.BLUETOOTH) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.BLUETOOTH}, PERMISSION_BLUETOOTH);
+        } else if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.BLUETOOTH_ADMIN) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.BLUETOOTH_ADMIN}, PERMISSION_BLUETOOTH_ADMIN);
+        } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S && ContextCompat.checkSelfPermission(getContext(), Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.BLUETOOTH_CONNECT}, PERMISSION_BLUETOOTH_CONNECT);
+        } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S && ContextCompat.checkSelfPermission(getContext(), Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.BLUETOOTH_SCAN}, PERMISSION_BLUETOOTH_SCAN);
+        } else {
+            BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+            if (mBluetoothAdapter == null) {
+                Toast.makeText(getContext(), "เครื่องนี้ไม่รองรับระบบ Bluetooth", Toast.LENGTH_SHORT).show();
+            } else {
+                if (!mBluetoothAdapter.isEnabled()) {
+                    Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                    startActivityForResult(enableBtIntent, 11);
+                } else {
+                    new AsyncBluetoothEscPosPrint(
+                            getContext(),
+                            new AsyncEscPosPrint.OnPrintFinished() {
+                                @Override
+                                public void onError(AsyncEscPosPrinter asyncEscPosPrinter, int codeException) {
+                                    Log.e("Async.OnPrintFinished", "AsyncEscPosPrint.OnPrintFinished : An error occurred !");
+                                }
+
+                                @Override
+                                public void onSuccess(AsyncEscPosPrinter asyncEscPosPrinter) {
+                                    Log.i("Async.OnPrintFinished", "AsyncEscPosPrint.OnPrintFinished : Print is finished !");
+                                }
+                            }
+                    ).execute(getAsyncEscPosPrinter(selectedDevice));
+                }
+            }
+        }
+    }
+
+
+
+
+    public void browseBluetoothDevice() {
+        final BluetoothConnection[] bluetoothDevicesList = (new BluetoothPrintersConnections()).getList();
+        if (bluetoothDevicesList != null) {
+            final String[] items = new String[bluetoothDevicesList.length + 1];
+//            items[0] = "Default printer";
+            Log.d("CHKDV","list : "+bluetoothDevicesList.length);
+            int i = 0;
+            for (BluetoothConnection device : bluetoothDevicesList) {
+                if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                        ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.BLUETOOTH_CONNECT}, 2);
+                        return;
+                    }
+                }
+                Log.d("CHKDV","name : "+device.getDevice().getName());
+                items[++i] = device.getDevice().getName();
+
+            }
+
+            AlertDialog.Builder alertDialog = new AlertDialog.Builder(getContext());
+            alertDialog.setTitle("เลือกเครื่องพิมพ์");
+            if(bluetoothDevicesList.length==0){
+                items[0] = "ไม่พบเครื่องพิมพ์";
+                alertDialog.setItems(items, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+            }else{
+                alertDialog.setItems(items, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        int index = i - 1;
+                        if (index == -1) {
+                            selectedDevice = null;
+                        } else {
+                            selectedDevice = bluetoothDevicesList[index];
+                            setPrintCur();
+                        }
+                    }
+                });
+            }
+
+            AlertDialog alert = alertDialog.create();
+            if(bluetoothDevicesList.length==0){
+                alert.setCanceledOnTouchOutside(true);
+            }else{
+                alert.setCanceledOnTouchOutside(false);
+            }
+            alert.show();
+
+        }
     }
 
 
@@ -370,32 +599,7 @@ public class HomeFragment extends Fragment {
                 if (menuDataModel.getKey().equals(cartDataGet.getKeyMenu())) {
                     float newPrice = 0;
                     float newPriceTotalTops = 0;
-//                    if (typeBill == 1) {
-//                        if(cartDataGet.getTypePrice()==1){
-//                            newPrice = menuDataModel.getPriceNm();
-//                        }else{
-//                            newPrice = menuDataModel.getPriceSp();
-//                        }
-//                    } else if (typeBill == 2) {
-//                        if(cartDataGet.getTypePrice()==1){
-//                            newPrice = menuDataModel.getPriceNmGrab();
-//                        }else{
-//                            newPrice = menuDataModel.getPriceSpGrab();
-//                        }
-//                    } else if (typeBill == 3) {
-//                        if(cartDataGet.getTypePrice()==1){
-//                            newPrice = menuDataModel.getPriceNmFood();
-//                        }else{
-//                            newPrice = menuDataModel.getPriceSpFood();
-//                        }
-//                    } else if (typeBill == 4) {
-//                        if(cartDataGet.getTypePrice()==1){
-//                            newPrice = menuDataModel.getPriceNmRobin();
-//                        }else{
-//                            newPrice = menuDataModel.getPriceSpRobin();
-//                        }
-//
-//                    }
+
                     if (menuDataModel.getTypeMenu().equals("one")) {
                         if (typeBill == 1) {
                             newPrice = menuDataModel.getPrice_normal();
@@ -521,15 +725,19 @@ public class HomeFragment extends Fragment {
     }
 
     private void setShowBtnSale() {
-        if (isOpenSale) {
-//            Log.d("CJKOP","opened");
+        if(isSaleEnd){
             openSale.setVisibility(View.GONE);
-            closeSale.setVisibility(View.VISIBLE);
-        } else {
-//            Log.d("CJKOP","not open");
-            openSale.setVisibility(View.VISIBLE);
             closeSale.setVisibility(View.GONE);
+        }else{
+            if (isOpenSale) {
+                openSale.setVisibility(View.GONE);
+                closeSale.setVisibility(View.VISIBLE);
+            } else {
+                openSale.setVisibility(View.VISIBLE);
+                closeSale.setVisibility(View.GONE);
+            }
         }
+
     }
 
     private void getShowMenu() {
@@ -669,7 +877,7 @@ public class HomeFragment extends Fragment {
             ArrayList<ListPriceModel> listPriceModelArrayList = new ArrayList<>();
             Map<String, Object> priceMap = menuDataModel.getListPrice();
 
-            ListPriceAdaptor listPriceAdaptor = null;
+            ListPriceAdaptor listPriceAdaptor;
             if (menuDataModel.getTypeMenu().equals("many")) {
                 contPriceList.setVisibility(View.VISIBLE);
                 for (Map.Entry<String, Object> entry : priceMap.entrySet()) {
@@ -827,9 +1035,20 @@ public class HomeFragment extends Fragment {
                 }
             });
         } else if (!isOpenBill) {
-            Toast.makeText(getContext(), "กรุณาเปิดบิลก่อน!", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(getContext(), "กรุณาเปิดรอบการขายวันนี้ก่อน!", Toast.LENGTH_SHORT).show();
+
+            if(isSaleEnd){
+
+                Toast.makeText(getContext(), "ปิดรอบการขายวันนี้แล้ว!", Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(getContext(), "กรุณาเปิดบิลก่อน!", Toast.LENGTH_SHORT).show();
+            }
+        } else if(!isOpenSale){
+
+            if(isSaleEnd){
+                Toast.makeText(getContext(), "ปิดรอบการขายวันนี้แล้ว!", Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(getContext(), "กรุณาเปิดรอบการขายวันนี้ก่อน!", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -844,6 +1063,7 @@ public class HomeFragment extends Fragment {
     private void checkNewMonthData() {
         int getMonthCur = dateTool.getMonthCurInt();
         int getYearCur = dateTool.getYearCurInt();
+        String may = dateTool.getMonthAndYearCur();
         db.collection("data_month")
                 .whereEqualTo("month", getMonthCur)
                 .whereEqualTo("year", getYearCur)
@@ -856,10 +1076,12 @@ public class HomeFragment extends Fragment {
                             monthData.setMonth(getMonthCur);
                             monthData.setYear(getYearCur);
                             monthData.setListData(newList);
+
                             db.collection("data_month")
                                     .add(monthData)
                                     .addOnSuccessListener(documentReference -> {
                                         keyMonthData = documentReference.getId();
+                                        MyApplication.setMonthDataKey(keyMonthData);
                                         setShowBtnSale();
                                         checkOpenDaily();
                                     })
@@ -868,6 +1090,7 @@ public class HomeFragment extends Fragment {
 
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 keyMonthData = document.getId();
+                                MyApplication.setMonthDataKey(keyMonthData);
                                 setShowBtnSale();
                                 checkOpenDaily();
                             }
@@ -896,9 +1119,18 @@ public class HomeFragment extends Fragment {
                         if (value == null) {
                             openDialogOpenSale();
                         } else {
-                            isOpenSale = true;
+                            if(value.get("status").toString().equals("end")){
+                                isSaleEnd = true;
+                                isOpenSale = false;
+                                showNumBill.setText("ปิดรอบการขายแล้ว");
+                            }else{
+                                isOpenSale = true;
+                            }
                             setShowBtnSale();
                         }
+
+
+
 
                     }
 
@@ -948,9 +1180,15 @@ public class HomeFragment extends Fragment {
                 getBillRunCur();
             } else if (requestCode == LAUNCH_SAVE_MENU) {
                 getShowMenu();
+            }else if(requestCode == LAUNCH_CLOSE_SALE){
+                isSaleEnd = true;
+                isOpenSale = false;
+                setEndSale();
             }
         }
     }
+
+
 
     @Override
     public void onDestroyView() {

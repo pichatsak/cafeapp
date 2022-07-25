@@ -9,16 +9,17 @@
     tools:context=".ui.slideshow.SlideshowFragment">
 
     <LinearLayout
+
+        android:background="@drawable/b_dialog_g_f"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <LinearLayout
-            android:layout_width="320dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0"
-            android:background="@color/backGroundBlue"
             android:elevation="2dp"
             android:orientation="vertical">
 
@@ -36,7 +37,6 @@
                     <ImageView
                         android:id="@+id/backs"
                         android:layout_width="wrap_content"
-
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:background="@drawable/ic_baseline_arrow_back_ios_24" />
@@ -61,7 +61,7 @@
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginLeft="0sp"
-                                android:background="@drawable/ic_baseline_timeline_24"
+                                android:background="@drawable/ic_baseline_settings_24"
                                 android:backgroundTint="@color/white" />
                         </LinearLayout>
 
@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="0dp"
-                        android:text="บันทึกค่าใช้จ่ายร้าน"
+                        android:text="ตั้งค่าการพิมพ์"
                         android:textColor="@color/main1"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -82,101 +82,34 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="15dp"
-                    android:gravity="end">
-
-                    <TextView
-                        android:id="@+id/dateCurShow"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textSize="15sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:visibility="gone"
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/b_counter"
-                    android:elevation="24dp"
-                    android:orientation="vertical"
-                    android:paddingLeft="10dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="10dp"
-                    android:paddingBottom="0dp">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="เงินในลิ้นชัก"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:gravity="center"
-                        android:text="1000.00"
-                        android:textColor="@color/black"
-                        android:textSize="25sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/b_counter1"
-                    android:elevation="24dp"
-                    android:orientation="vertical"
-                    android:paddingLeft="0dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="0dp"
-                    android:paddingBottom="0dp">
-
-
-                    <RelativeLayout
+                    <LinearLayout
+                        android:visibility="gone"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/b_counter"
+                        android:elevation="24dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="0dp">
 
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <com.google.android.material.imageview.ShapeableImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/ic_spectrum_gradient__4_"
-                                android:padding="0dp"
-                                android:scaleType="fitXY"
-                                app:shapeAppearanceOverlay="@style/roundedImageViewRounded1"
-
-                                />
-                        </RelativeLayout>
 
                         <TextView
-                            android:layout_marginLeft="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
@@ -184,475 +117,229 @@
                             android:textColor="@color/black"
                             android:textSize="18sp" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-
-                            >
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="0dp"
-                                android:gravity="center"
-                                android:text="0.00"
-                                android:textColor="@color/black"
-                                android:textSize="25sp" />
-
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/b_counter1"
-                    android:elevation="24dp"
-                    android:orientation="vertical"
-                    android:paddingLeft="0dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="0dp"
-                    android:paddingBottom="0dp">
-
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <com.google.android.material.imageview.ShapeableImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/ic_spectrum_gradient__2_"
-                                android:padding="0dp"
-                                android:scaleType="fitXY"
-                                app:shapeAppearanceOverlay="@style/roundedImageViewRounded1"
-
-                                />
-                        </RelativeLayout>
-
                         <TextView
-                            android:layout_marginLeft="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="ใช้จ่าย"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-
-                            >
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="0dp"
-                                android:gravity="center"
-                                android:text="0.00"
-                                android:textColor="@color/textred"
-                                android:textSize="25sp" />
-
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:visibility="gone"
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/b_counter2"
-                    android:elevation="24dp"
-                    android:orientation="vertical"
-                    android:paddingLeft="10dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="10dp"
-                    android:paddingBottom="0dp">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="คงเหลือ"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:gravity="center"
-                        android:text="580.00"
-                        android:textColor="@color/white"
-                        android:textSize="25sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/b_counter1"
-                    android:elevation="24dp"
-                    android:orientation="vertical"
-                    android:paddingLeft="0dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="0dp"
-                    android:paddingBottom="0dp">
-
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <com.google.android.material.imageview.ShapeableImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/ic_spectrum_gradient"
-                                android:padding="0dp"
-                                android:scaleType="fitXY"
-                                app:shapeAppearanceOverlay="@style/roundedImageViewRounded1"
-
-                                />
-                        </RelativeLayout>
-
-                        <TextView
+                            android:layout_gravity="center"
                             android:layout_marginLeft="10dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="คงเหลือ"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="1000.00"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-
-                            >
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="0dp"
-                                android:gravity="center"
-                                android:text="0.00"
-                                android:textColor="@color/black"
-                                android:textSize="25sp" />
-
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
-                </LinearLayout>
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp">
-
-                <EditText
-
-                    android:layout_width="300dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/design_fram_edittext2"
-                    android:drawableEnd="@drawable/ic_baseline_search_24"
-                    android:drawableTint="@color/main1"
-                    android:elevation="0dp"
-                    android:hint="ค้นหาสินค้าที่ต้องการ"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:textColor="@color/main"
-                    android:textColorHint="@color/QDropMain"
-                    android:textSize="19sp"
-                    android:visibility="visible" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:gravity="end">
-
-                    <LinearLayout
-                        android:id="@+id/add_list"
-                        android:layout_width="180dp"
-                        android:layout_height="55dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/b_add_plus"
-                        android:elevation="2dp"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="7dp"
-                            android:layout_marginTop="7dp"
-                            android:layout_marginRight="7dp"
-                            android:layout_marginBottom="7dp"
-                            android:layout_weight="0.55"
-                            android:background="@drawable/b_add"
-                            android:elevation="2dp"
-                            android:gravity="center"
-
-                            >
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="0dp"
-                                android:padding="0dp"
-                                android:src="@drawable/ic_baseline_add_24"
-
-
-                                />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1.45">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:text="เพิ่มรายการ"
-                                android:textColor="@color/main1"
-                                android:textSize="18sp"
-                                android:textStyle="normal" />
-
-                        </LinearLayout>
-
+                            android:textSize="25sp" />
 
                     </LinearLayout>
 
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="30dp"
-                android:background="@drawable/b_stock_t"
-                android:elevation="2dp"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
                     <LinearLayout
+                        android:padding="30dp"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginRight="15dp">
+                        android:layout_height="match_parent">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="2px"
-                            android:background="@color/textmenu">
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="15dp"
-                        android:background="@drawable/b_stock_table"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1.7"
-                            android:gravity="center">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="รายการ"
-                                android:textColor="@color/main1"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:text="ขนาดกระดาษ (มม.)"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
 
+                            <EditText
+                                android:id="@+id/tv_size_pp"
+                                android:inputType="number"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/design_fram_edittext2"
+                                android:paddingLeft="10dp"
+                                android:textSize="19sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dpi เครื่องพิมพ์"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/tv_dpi"
+                                android:inputType="number"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/design_fram_edittext2"
+                                android:paddingLeft="10dp"
+                                android:textSize="19sp" />
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="จำนวนตัวอักษร/บรรทัด"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/tv_per_line"
+                                android:inputType="number"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/design_fram_edittext2"
+                                android:paddingLeft="10dp"
+                                android:textSize="19sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="30dp"
+                            android:layout_width="match_parent"
+                            android:weightSum="2"
+                            android:layout_height="80dp">
+                            <LinearLayout
+                                android:id="@+id/testPrint"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:paddingRight="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/design_fram1"
+                                    android:gravity="center"
+                                    android:text="ทดสอบการพิมพ์"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/main1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:paddingLeft="10dp"
+                                android:id="@+id/saveSet"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/check_fram_list"
+                                    android:gravity="center"
+                                    android:text="บันทึก"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
                         </LinearLayout>
 
                         <LinearLayout
                             android:visibility="gone"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="จำนวน"
-                                android:textColor="@color/main1"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="จำนวนเงิน"
-                                android:textColor="@color/main1"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:gravity="center">
-
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginRight="15dp">
-
-                        <LinearLayout
+                            android:background="@drawable/design_fram_card"
                             android:layout_width="match_parent"
-                            android:layout_height="2px"
-                            android:background="@color/textmenu">
+                            android:layout_height="80dp"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:paddingLeft="30dp"
+                                    android:text="สถานะการเชื่อมต่อ"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textColor="@color/main"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:gravity="right"
+                                android:paddingRight="30dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:paddingLeft="30dp"
+                                    android:text="ยังไม่ได้เชื่อมต่อ"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
 
+                        </LinearLayout>
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:weightSum="2"
+                            android:layout_height="80dp">
+                            <LinearLayout
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:id="@+id/printConnect"
+                                android:paddingRight="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/check_fram_list"
+                                    android:gravity="center"
+                                    android:text="เชื่อมต่อ"
+                                    android:textSize="24sp"
+                                    android:textColor="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:id="@+id/printSend"
+                                android:paddingLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/check_fram_list"
+                                    android:gravity="center"
+                                    android:text="ปริ้น"
+                                    android:textSize="24sp"
+                                    android:textColor="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
 
                 </LinearLayout>
+            </ScrollView>
 
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:scrollbars="none">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <androidx.recyclerview.widget.RecyclerView
-                                android:id="@+id/shop_expenses_view"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                            </androidx.recyclerview.widget.RecyclerView>
-                        </LinearLayout>
-
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp">
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-
-                </ScrollView>
-            </LinearLayout>
 
         </LinearLayout>
+
 
 
     </LinearLayout>
